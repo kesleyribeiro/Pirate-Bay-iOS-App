@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		FA03318F20A3638B009AEB73 /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA03318E20A3638B009AEB73 /* ProductService.swift */; };
 		FA03319320A36769009AEB73 /* ProductCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA03319220A36769009AEB73 /* ProductCVCell.swift */; };
+		FA03319720A36E94009AEB73 /* search.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FA03319520A36E93009AEB73 /* search.pdf */; };
+		FA03319820A36E94009AEB73 /* home.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FA03319620A36E93009AEB73 /* home.pdf */; };
 		FA887C6F20A24F350071220F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA887C6E20A24F350071220F /* AppDelegate.swift */; };
 		FA887C7420A24F350071220F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA887C7220A24F350071220F /* Main.storyboard */; };
 		FA887C7620A24F360071220F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA887C7520A24F360071220F /* Assets.xcassets */; };
@@ -74,6 +76,8 @@
 /* Begin PBXFileReference section */
 		FA03318E20A3638B009AEB73 /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
 		FA03319220A36769009AEB73 /* ProductCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCVCell.swift; sourceTree = "<group>"; };
+		FA03319520A36E93009AEB73 /* search.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = search.pdf; sourceTree = "<group>"; };
+		FA03319620A36E93009AEB73 /* home.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = home.pdf; sourceTree = "<group>"; };
 		FA887C6B20A24F350071220F /* Pirate Bay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pirate Bay.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA887C6E20A24F350071220F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA887C7320A24F350071220F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -228,6 +232,8 @@
 		FA887C8B20A2706E0071220F /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				FA03319620A36E93009AEB73 /* home.pdf */,
+				FA03319520A36E93009AEB73 /* search.pdf */,
 				FA887C9A20A32F6A0071220F /* dvd */,
 				FA887CB620A32F6B0071220F /* toy */,
 				FA887C8C20A270880071220F /* piratebattle.pdf */,
@@ -507,6 +513,7 @@
 				FA887CEF20A32F6B0071220F /* sharkbiteship1.jpg in Resources */,
 				FA887CEB20A32F6B0071220F /* sharkbiteship4.jpg in Resources */,
 				FA887C8F20A270890071220F /* piratebattle.pdf in Resources */,
+				FA03319820A36E94009AEB73 /* home.pdf in Resources */,
 				FA887C9320A3178E0071220F /* products.json in Resources */,
 				FA887CE620A32F6B0071220F /* piratetides3.jpg in Resources */,
 				FA887CFE20A32F6B0071220F /* littletikes3.jpg in Resources */,
@@ -527,6 +534,7 @@
 				FA887CF720A32F6B0071220F /* popupPirate4.jpg in Resources */,
 				FA887CDA20A32F6B0071220F /* pirates6.jpg in Resources */,
 				FA887CE420A32F6B0071220F /* captainjake1.jpg in Resources */,
+				FA03319720A36E94009AEB73 /* search.pdf in Resources */,
 				FA887C7620A24F360071220F /* Assets.xcassets in Resources */,
 				FA887C7420A24F350071220F /* Main.storyboard in Resources */,
 				FA887CE720A32F6B0071220F /* piratetides2.jpg in Resources */,
