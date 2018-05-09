@@ -9,6 +9,7 @@
 import UIKit
 
 extension String {
+
     func stringFileExtension() -> String {
         if self.contains(".") {
             // toy.jpg, .png
