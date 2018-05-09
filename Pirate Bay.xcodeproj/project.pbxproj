@@ -16,6 +16,9 @@
 		FA887C8F20A270890071220F /* piratebattle.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FA887C8C20A270880071220F /* piratebattle.pdf */; };
 		FA887C9020A270890071220F /* piratemap.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FA887C8D20A270890071220F /* piratemap.pdf */; };
 		FA887C9120A270890071220F /* piratesofcaribbean.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FA887C8E20A270890071220F /* piratesofcaribbean.pdf */; };
+		FA887C9320A3178E0071220F /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = FA887C9220A3178E0071220F /* products.json */; };
+		FA887C9520A317B20071220F /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA887C9420A317B20071220F /* CoreDataStack.swift */; };
+		FA887C9920A318FC0071220F /* PirateBay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA887C9720A318FC0071220F /* PirateBay.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		FA887C8C20A270880071220F /* piratebattle.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = piratebattle.pdf; sourceTree = "<group>"; };
 		FA887C8D20A270890071220F /* piratemap.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = piratemap.pdf; sourceTree = "<group>"; };
 		FA887C8E20A270890071220F /* piratesofcaribbean.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = piratesofcaribbean.pdf; sourceTree = "<group>"; };
+		FA887C9220A3178E0071220F /* products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = products.json; sourceTree = "<group>"; };
+		FA887C9420A317B20071220F /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		FA887C9820A318FC0071220F /* PirateBay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PirateBay.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,7 @@
 		FA887C6D20A24F350071220F /* Pirate Bay */ = {
 			isa = PBXGroup;
 			children = (
+				FA887C9620A318D40071220F /* dataModel */,
 				FA887C8B20A2706E0071220F /* assets */,
 				FA887C8620A26B2A0071220F /* Controller */,
 				FA887C6E20A24F350071220F /* AppDelegate.swift */,
@@ -90,6 +97,16 @@
 				FA887C8E20A270890071220F /* piratesofcaribbean.pdf */,
 			);
 			path = assets;
+			sourceTree = "<group>";
+		};
+		FA887C9620A318D40071220F /* dataModel */ = {
+			isa = PBXGroup;
+			children = (
+				FA887C9420A317B20071220F /* CoreDataStack.swift */,
+				FA887C9220A3178E0071220F /* products.json */,
+				FA887C9720A318FC0071220F /* PirateBay.xcdatamodeld */,
+			);
+			path = dataModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +169,7 @@
 			files = (
 				FA887C7920A24F360071220F /* LaunchScreen.storyboard in Resources */,
 				FA887C8F20A270890071220F /* piratebattle.pdf in Resources */,
+				FA887C9320A3178E0071220F /* products.json in Resources */,
 				FA887C9120A270890071220F /* piratesofcaribbean.pdf in Resources */,
 				FA887C9020A270890071220F /* piratemap.pdf in Resources */,
 				FA887C7620A24F360071220F /* Assets.xcassets in Resources */,
@@ -168,7 +186,9 @@
 			files = (
 				FA887C8820A26B4C0071220F /* PromoContentVC.swift in Sources */,
 				FA887C8A20A26B690071220F /* HomeVC.swift in Sources */,
+				FA887C9920A318FC0071220F /* PirateBay.xcdatamodeld in Sources */,
 				FA887C6F20A24F350071220F /* AppDelegate.swift in Sources */,
+				FA887C9520A317B20071220F /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +386,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FA887C9720A318FC0071220F /* PirateBay.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FA887C9820A318FC0071220F /* PirateBay.xcdatamodel */,
+			);
+			currentVersion = FA887C9820A318FC0071220F /* PirateBay.xcdatamodel */;
+			path = PirateBay.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FA887C6320A24F350071220F /* Project object */;
 }

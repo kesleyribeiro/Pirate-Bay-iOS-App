@@ -17,6 +17,8 @@ Argghh ... Aye aye Captain! .. Let's sail!!
 * UITableViewController with static and dynamic view
 * Multi sections tableview controller
 * MVC with Service Layer (MVVM)
+* Data Model with CoreData
+* JSON file
 * Dynamic buttons
 * Stackview
 * Shopping cart singleton
