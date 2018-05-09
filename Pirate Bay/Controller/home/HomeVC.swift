@@ -12,12 +12,16 @@ class HomeVC: UIViewController {
 
     // MARK: - IBOutlet
     @IBOutlet weak var pageView: UIView!
-
+    @IBOutlet weak var toyCV: UICollectionView!
+    @IBOutlet weak var dvdCV: UICollectionView!
+    
     // MARK: - Properties
     var pageViewController: UIPageViewController?
     let arrayPageImage = ["piratebattle", "piratemap", "piratesofcaribbean"]
     var currentIndex = 0
-    
+    var toysCollection = [Product]()
+    var dvdCollection = [Product]()
+
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
@@ -25,7 +29,9 @@ class HomeVC: UIViewController {
 
         Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(HomeVC.loadNextController), userInfo: nil, repeats: true)
         
-        setPageViewController()    
+        setPageViewController()
+        
+        loadProducts()
     }
     
     // MARK: - Private functions
@@ -67,6 +73,13 @@ class HomeVC: UIViewController {
         let nextController = getViewController(atIndex: currentIndex)
         
         self.pageViewController?.setViewControllers([nextController], direction: .forward, animated: true, completion: nil)
+    }
+    
+    private func loadProducts() {
+        
+        toysCollection = ProductService.products(category: "toy")
+        
+        dvdCollection = ProductService.products(category: "dvd")
     }
 
 
@@ -119,5 +132,53 @@ extension HomeVC: UIPageViewControllerDataSource {
         }
         
         return getViewController(atIndex: index)
+    }
+}
+
+// MARK: - UICollectionViewDataSource
+
+extension HomeVC: UICollectionViewDataSource {
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        switch collectionView {
+        case self.toyCV:
+            return self.toysCollection.count
+            
+        case self.dvdCV:
+            return self.dvdCollection.count
+            
+        default:
+            return 0
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        switch collectionView {
+        case self.toyCV:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellToy", for: indexPath) as! ProductCVCell
+            
+            let product = toysCollection[indexPath.row]
+            
+            cell.productImageView.image = Utility.image(withName: product.mainImage, andType: "jpg")
+            
+            return cell
+            
+        case self.dvdCV:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellDvd", for: indexPath) as! ProductCVCell
+            
+            let product = dvdCollection[indexPath.row]
+            
+            cell.productImageView.image = Utility.image(withName: product.mainImage, andType: "jpg")
+            
+            return cell
+            
+        default:
+            return UICollectionViewCell()
+        }
     }
 }

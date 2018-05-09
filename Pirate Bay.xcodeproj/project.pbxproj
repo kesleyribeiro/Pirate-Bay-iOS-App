@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA03318F20A3638B009AEB73 /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA03318E20A3638B009AEB73 /* ProductService.swift */; };
+		FA03319320A36769009AEB73 /* ProductCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA03319220A36769009AEB73 /* ProductCVCell.swift */; };
 		FA887C6F20A24F350071220F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA887C6E20A24F350071220F /* AppDelegate.swift */; };
 		FA887C7420A24F350071220F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA887C7220A24F350071220F /* Main.storyboard */; };
 		FA887C7620A24F360071220F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA887C7520A24F360071220F /* Assets.xcassets */; };
@@ -70,6 +72,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA03318E20A3638B009AEB73 /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
+		FA03319220A36769009AEB73 /* ProductCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCVCell.swift; sourceTree = "<group>"; };
 		FA887C6B20A24F350071220F /* Pirate Bay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pirate Bay.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA887C6E20A24F350071220F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA887C7320A24F350071220F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -145,6 +149,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA03318D20A3637C009AEB73 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				FA03318E20A3638B009AEB73 /* ProductService.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		FA03319020A36734009AEB73 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				FA03319120A3673F009AEB73 /* home */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		FA03319120A3673F009AEB73 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				FA03319220A36769009AEB73 /* ProductCVCell.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		FA03319420A367C6009AEB73 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				FA887C8720A26B4C0071220F /* PromoContentVC.swift */,
+				FA887C8920A26B690071220F /* HomeVC.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
 		FA887C6220A24F350071220F = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +201,8 @@
 		FA887C6D20A24F350071220F /* Pirate Bay */ = {
 			isa = PBXGroup;
 			children = (
+				FA03319020A36734009AEB73 /* view */,
+				FA03318D20A3637C009AEB73 /* model */,
 				FA887D0920A330560071220F /* extension */,
 				FA887D0620A32F860071220F /* helper */,
 				FA887C9620A318D40071220F /* dataModel */,
@@ -181,8 +220,7 @@
 		FA887C8620A26B2A0071220F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				FA887C8720A26B4C0071220F /* PromoContentVC.swift */,
-				FA887C8920A26B690071220F /* HomeVC.swift */,
+				FA03319420A367C6009AEB73 /* home */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -519,9 +557,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA887C8820A26B4C0071220F /* PromoContentVC.swift in Sources */,
+				FA03318F20A3638B009AEB73 /* ProductService.swift in Sources */,
 				FA887D0B20A3306E0071220F /* String+Extension.swift in Sources */,
 				FA887C8A20A26B690071220F /* HomeVC.swift in Sources */,
 				FA887D0820A32F9B0071220F /* Utility.swift in Sources */,
+				FA03319320A36769009AEB73 /* ProductCVCell.swift in Sources */,
 				FA887C9920A318FC0071220F /* PirateBay.xcdatamodeld in Sources */,
 				FA887C6F20A24F350071220F /* AppDelegate.swift in Sources */,
 				FA887C9520A317B20071220F /* CoreDataStack.swift in Sources */,

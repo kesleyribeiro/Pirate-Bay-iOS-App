@@ -34,8 +34,8 @@
                                                     <segue destination="N0f-pz-68U" kind="embed" id="z49-sc-npD"/>
                                                 </connections>
                                             </containerView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Featured Toys" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6A-5I-IAp">
-                                                <rect key="frame" x="10" y="150" width="96.5" height="15"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Featured Toys" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6A-5I-IAp">
+                                                <rect key="frame" x="10" y="152" width="96.5" height="15"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="15" id="Vuy-Ab-RPI"/>
                                                 </constraints>
@@ -45,25 +45,25 @@
                                             </label>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="W7P-hT-Cu8" userLabel="Toy CollectionView">
                                                 <rect key="frame" x="0.0" y="165" width="213.5" height="130"/>
-                                                <color key="backgroundColor" red="0.99856847520000003" green="0.94759041070000005" blue="0.069261640309999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="130" id="Zb3-Us-hFG"/>
                                                 </constraints>
-                                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="0.0" id="50f-y8-oBk">
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="20" minimumInteritemSpacing="0.0" id="50f-y8-oBk">
                                                     <size key="itemSize" width="100" height="100"/>
                                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                     <inset key="sectionInset" minX="10" minY="15" maxX="5" maxY="15"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="8FD-SG-HFk">
-                                                        <rect key="frame" x="59.5" y="15" width="100" height="100"/>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellToy" id="8FD-SG-HFk" customClass="ProductCVCell" customModule="Pirate_Bay" customModuleProvider="target">
+                                                        <rect key="frame" x="10" y="15" width="100" height="100"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
-                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f5V-hf-Vli">
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buccaneerboat1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="f5V-hf-Vli">
                                                                     <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                                 </imageView>
                                                             </subviews>
@@ -74,8 +74,15 @@
                                                             <constraint firstAttribute="bottom" secondItem="f5V-hf-Vli" secondAttribute="bottom" id="yvk-tc-PCm"/>
                                                             <constraint firstAttribute="trailing" secondItem="f5V-hf-Vli" secondAttribute="trailing" id="zpE-M5-ZVC"/>
                                                         </constraints>
+                                                        <connections>
+                                                            <outlet property="productImageView" destination="f5V-hf-Vli" id="u1N-MI-QcJ"/>
+                                                        </connections>
                                                     </collectionViewCell>
                                                 </cells>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="9b4-Dw-Kzg"/>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="eeL-tx-nzK"/>
+                                                </connections>
                                             </collectionView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ldI-Ws-AE8" userLabel="Line separator">
                                                 <rect key="frame" x="10" y="300" width="300" height="1"/>
@@ -86,22 +93,22 @@
                                             </view>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YyO-8x-Xlr" userLabel="DVD CollectionView">
                                                 <rect key="frame" x="0.0" y="323" width="320" height="130"/>
-                                                <color key="backgroundColor" red="0.99856847520000003" green="0.94759041070000005" blue="0.069261640309999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="0.0" id="IM1-5i-LkM">
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="20" minimumInteritemSpacing="0.0" id="IM1-5i-LkM">
                                                     <size key="itemSize" width="100" height="100"/>
                                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                     <inset key="sectionInset" minX="10" minY="15" maxX="5" maxY="15"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="JDQ-9Z-eYS">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellDvd" id="JDQ-9Z-eYS" customClass="ProductCVCell" customModule="Pirate_Bay" customModuleProvider="target">
                                                         <rect key="frame" x="10" y="15" width="100" height="100"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
-                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hh0-Kc-meW">
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="captainjake1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Hh0-Kc-meW">
                                                                     <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                                 </imageView>
                                                             </subviews>
@@ -116,13 +123,20 @@
                                                             <constraint firstAttribute="bottom" secondItem="Hh0-Kc-meW" secondAttribute="bottom" id="fAw-Aa-UJK"/>
                                                             <constraint firstItem="Hh0-Kc-meW" firstAttribute="top" secondItem="JDQ-9Z-eYS" secondAttribute="top" id="yuU-NJ-Ibp"/>
                                                         </constraints>
+                                                        <connections>
+                                                            <outlet property="productImageView" destination="Hh0-Kc-meW" id="RMX-8C-j4E"/>
+                                                        </connections>
                                                     </collectionViewCell>
                                                 </cells>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="bjV-yH-Fpb"/>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="BlY-bF-iPw"/>
+                                                </connections>
                                             </collectionView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="COV-GY-FSf">
                                                 <rect key="frame" x="213.5" y="165" width="106.5" height="130"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RGM-9P-1Tb">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="toydrive.png" translatesAutoresizingMaskIntoConstraints="NO" id="RGM-9P-1Tb">
                                                         <rect key="frame" x="5" y="5" width="96.5" height="120"/>
                                                     </imageView>
                                                 </subviews>
@@ -135,7 +149,7 @@
                                                     <constraint firstAttribute="trailing" secondItem="RGM-9P-1Tb" secondAttribute="trailing" constant="5" id="pSP-8r-yxj"/>
                                                 </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="DVD Collection" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="68f-rD-xlV">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DVD Collection" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="68f-rD-xlV">
                                                 <rect key="frame" x="10" y="303" width="103.5" height="15"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="15" id="n2F-pk-tYE"/>
@@ -147,9 +161,9 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="L6A-5I-IAp" firstAttribute="leading" secondItem="NWd-vt-0E8" secondAttribute="leading" constant="8" id="4PP-VL-ZeV"/>
+                                            <constraint firstItem="L6A-5I-IAp" firstAttribute="leading" secondItem="NWd-vt-0E8" secondAttribute="leading" constant="10" id="4PP-VL-ZeV"/>
                                             <constraint firstItem="COV-GY-FSf" firstAttribute="leading" secondItem="W7P-hT-Cu8" secondAttribute="trailing" id="CbO-eX-mbS"/>
-                                            <constraint firstItem="L6A-5I-IAp" firstAttribute="top" secondItem="X9h-mZ-eDi" secondAttribute="bottom" id="ClH-TI-p12"/>
+                                            <constraint firstItem="L6A-5I-IAp" firstAttribute="top" secondItem="X9h-mZ-eDi" secondAttribute="bottom" constant="2" id="ClH-TI-p12"/>
                                             <constraint firstAttribute="trailing" secondItem="ldI-Ws-AE8" secondAttribute="trailing" constant="10" id="GIi-X1-Uza"/>
                                             <constraint firstAttribute="trailing" secondItem="YyO-8x-Xlr" secondAttribute="trailing" id="HjJ-jZ-9hd"/>
                                             <constraint firstItem="COV-GY-FSf" firstAttribute="baseline" secondItem="W7P-hT-Cu8" secondAttribute="baseline" id="O5Q-oH-x9s"/>
@@ -191,7 +205,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Pirate Bay" id="oHo-XQ-I9w"/>
                     <connections>
+                        <outlet property="dvdCV" destination="YyO-8x-Xlr" id="WDI-yp-gfv"/>
                         <outlet property="pageView" destination="X9h-mZ-eDi" id="7BR-m4-gL1"/>
+                        <outlet property="toyCV" destination="W7P-hT-Cu8" id="0WI-66-mLT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -292,6 +308,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="buccaneerboat1.jpg" width="1170" height="1500"/>
+        <image name="captainjake1.jpg" width="360" height="500"/>
         <image name="piratebattle" width="2350" height="804"/>
+        <image name="toydrive.png" width="347" height="181"/>
     </resources>
 </document>
