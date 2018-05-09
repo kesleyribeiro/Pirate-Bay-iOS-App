@@ -19,6 +19,54 @@
 		FA887C9320A3178E0071220F /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = FA887C9220A3178E0071220F /* products.json */; };
 		FA887C9520A317B20071220F /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA887C9420A317B20071220F /* CoreDataStack.swift */; };
 		FA887C9920A318FC0071220F /* PirateBay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA887C9720A318FC0071220F /* PirateBay.xcdatamodeld */; };
+		FA887CD820A32F6B0071220F /* piratefairy1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA887C9C20A32F6A0071220F /* piratefairy1.jpg */; };
+		FA887CD920A32F6B0071220F /* piratefairy2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA887C9D20A32F6A0071220F /* piratefairy2.jpg */; };
+		FA887CDA20A32F6B0071220F /* pirates6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA887C9F20A32F6A0071220F /* pirates6.jpg */; };
+		FA887CDB20A32F6B0071220F /* pirates4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA887CA020A32F6A0071220F /* pirates4.jpg */; };
+		FA887CDC20A32F6B0071220F /* pirates5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA887CA120A32F6A0071220F /* pirates5.jpg */; };
+		FA887CDD20A32F6B0071220F /* pirates1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA887CA220A32F6A0071220F /* pirates1.jpg */; };
+		FA887CDE20A32F6B0071220F /* pirates2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA887CA320A32F6A0071220F /* pirates2.jpg */; };
+		FA887CDF20A32F6B0071220F /* pirates3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA887CA420A32F6A0071220F /* pirates3.jpg */; };
+		FA887CE020A32F6B0071220F /* piratesilicon1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA887CA620A32F6A0071220F /* piratesilicon1.jpg */; };
+		FA887CE120A32F6B0071220F /* piratescurse1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA887CA820A32F6A0071220F /* piratescurse1.jpg */; };
+		FA887CE220A32F6B0071220F /* scooby1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA887CAA20A32F6A0071220F /* scooby1.jpg */; };
+		FA887CE320A32F6B0071220F /* piratechest1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA887CAC20A32F6A0071220F /* piratechest1.jpg */; };
+		FA887CE420A32F6B0071220F /* captainjake1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA887CAE20A32F6A0071220F /* captainjake1.jpg */; };
+		FA887CE520A32F6B0071220F /* piratetides1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA887CB020A32F6A0071220F /* piratetides1.jpg */; };
+		FA887CE620A32F6B0071220F /* piratetides3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA887CB120A32F6A0071220F /* piratetides3.jpg */; };
+		FA887CE720A32F6B0071220F /* piratetides2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA887CB220A32F6A0071220F /* piratetides2.jpg */; };
+		FA887CE820A32F6B0071220F /* piratetides6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA887CB320A32F6A0071220F /* piratetides6.jpg */; };
+		FA887CE920A32F6B0071220F /* piratetides5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA887CB420A32F6A0071220F /* piratetides5.jpg */; };
+		FA887CEA20A32F6B0071220F /* piratetides4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA887CB520A32F6A0071220F /* piratetides4.jpg */; };
+		FA887CEB20A32F6B0071220F /* sharkbiteship4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA887CB820A32F6B0071220F /* sharkbiteship4.jpg */; };
+		FA887CEC20A32F6B0071220F /* sharkbiteship5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA887CB920A32F6B0071220F /* sharkbiteship5.jpg */; };
+		FA887CED20A32F6B0071220F /* sharkbiteship2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA887CBA20A32F6B0071220F /* sharkbiteship2.jpg */; };
+		FA887CEE20A32F6B0071220F /* sharkbiteship3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA887CBB20A32F6B0071220F /* sharkbiteship3.jpg */; };
+		FA887CEF20A32F6B0071220F /* sharkbiteship1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA887CBC20A32F6B0071220F /* sharkbiteship1.jpg */; };
+		FA887CF020A32F6B0071220F /* jakeneverland1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA887CBE20A32F6B0071220F /* jakeneverland1.jpg */; };
+		FA887CF120A32F6B0071220F /* jakeneverland2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA887CBF20A32F6B0071220F /* jakeneverland2.jpg */; };
+		FA887CF220A32F6B0071220F /* jakeneverland3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA887CC020A32F6B0071220F /* jakeneverland3.jpg */; };
+		FA887CF320A32F6B0071220F /* jakeneverland4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA887CC120A32F6B0071220F /* jakeneverland4.jpg */; };
+		FA887CF420A32F6B0071220F /* jakeneverland5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA887CC220A32F6B0071220F /* jakeneverland5.jpg */; };
+		FA887CF520A32F6B0071220F /* popupPirate6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA887CC420A32F6B0071220F /* popupPirate6.jpg */; };
+		FA887CF620A32F6B0071220F /* popupPirate5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA887CC520A32F6B0071220F /* popupPirate5.jpg */; };
+		FA887CF720A32F6B0071220F /* popupPirate4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA887CC620A32F6B0071220F /* popupPirate4.jpg */; };
+		FA887CF820A32F6B0071220F /* popupPirate1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA887CC720A32F6B0071220F /* popupPirate1.jpg */; };
+		FA887CF920A32F6B0071220F /* popupPirate3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA887CC820A32F6B0071220F /* popupPirate3.jpg */; };
+		FA887CFA20A32F6B0071220F /* popupPirate2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA887CC920A32F6B0071220F /* popupPirate2.jpg */; };
+		FA887CFB20A32F6B0071220F /* deluxeship1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA887CCB20A32F6B0071220F /* deluxeship1.jpg */; };
+		FA887CFC20A32F6B0071220F /* littletikes1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA887CCD20A32F6B0071220F /* littletikes1.jpg */; };
+		FA887CFD20A32F6B0071220F /* littletikes2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA887CCE20A32F6B0071220F /* littletikes2.jpg */; };
+		FA887CFE20A32F6B0071220F /* littletikes3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA887CCF20A32F6B0071220F /* littletikes3.jpg */; };
+		FA887CFF20A32F6B0071220F /* littletikes4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA887CD020A32F6B0071220F /* littletikes4.jpg */; };
+		FA887D0020A32F6B0071220F /* littletikes5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA887CD120A32F6B0071220F /* littletikes5.jpg */; };
+		FA887D0120A32F6B0071220F /* toydrive.png in Resources */ = {isa = PBXBuildFile; fileRef = FA887CD220A32F6B0071220F /* toydrive.png */; };
+		FA887D0220A32F6B0071220F /* buccaneerboat1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA887CD420A32F6B0071220F /* buccaneerboat1.jpg */; };
+		FA887D0320A32F6B0071220F /* buccaneerboat2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA887CD520A32F6B0071220F /* buccaneerboat2.jpg */; };
+		FA887D0420A32F6B0071220F /* buccaneerboat3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA887CD620A32F6B0071220F /* buccaneerboat3.jpg */; };
+		FA887D0520A32F6B0071220F /* buccaneerboat4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA887CD720A32F6B0071220F /* buccaneerboat4.jpg */; };
+		FA887D0820A32F9B0071220F /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA887D0720A32F9B0071220F /* Utility.swift */; };
+		FA887D0B20A3306E0071220F /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA887D0A20A3306E0071220F /* String+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +84,54 @@
 		FA887C9220A3178E0071220F /* products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = products.json; sourceTree = "<group>"; };
 		FA887C9420A317B20071220F /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		FA887C9820A318FC0071220F /* PirateBay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PirateBay.xcdatamodel; sourceTree = "<group>"; };
+		FA887C9C20A32F6A0071220F /* piratefairy1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = piratefairy1.jpg; sourceTree = "<group>"; };
+		FA887C9D20A32F6A0071220F /* piratefairy2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = piratefairy2.jpg; sourceTree = "<group>"; };
+		FA887C9F20A32F6A0071220F /* pirates6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pirates6.jpg; sourceTree = "<group>"; };
+		FA887CA020A32F6A0071220F /* pirates4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pirates4.jpg; sourceTree = "<group>"; };
+		FA887CA120A32F6A0071220F /* pirates5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pirates5.jpg; sourceTree = "<group>"; };
+		FA887CA220A32F6A0071220F /* pirates1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pirates1.jpg; sourceTree = "<group>"; };
+		FA887CA320A32F6A0071220F /* pirates2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pirates2.jpg; sourceTree = "<group>"; };
+		FA887CA420A32F6A0071220F /* pirates3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pirates3.jpg; sourceTree = "<group>"; };
+		FA887CA620A32F6A0071220F /* piratesilicon1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = piratesilicon1.jpg; sourceTree = "<group>"; };
+		FA887CA820A32F6A0071220F /* piratescurse1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = piratescurse1.jpg; sourceTree = "<group>"; };
+		FA887CAA20A32F6A0071220F /* scooby1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = scooby1.jpg; sourceTree = "<group>"; };
+		FA887CAC20A32F6A0071220F /* piratechest1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = piratechest1.jpg; sourceTree = "<group>"; };
+		FA887CAE20A32F6A0071220F /* captainjake1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = captainjake1.jpg; sourceTree = "<group>"; };
+		FA887CB020A32F6A0071220F /* piratetides1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = piratetides1.jpg; sourceTree = "<group>"; };
+		FA887CB120A32F6A0071220F /* piratetides3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = piratetides3.jpg; sourceTree = "<group>"; };
+		FA887CB220A32F6A0071220F /* piratetides2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = piratetides2.jpg; sourceTree = "<group>"; };
+		FA887CB320A32F6A0071220F /* piratetides6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = piratetides6.jpg; sourceTree = "<group>"; };
+		FA887CB420A32F6A0071220F /* piratetides5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = piratetides5.jpg; sourceTree = "<group>"; };
+		FA887CB520A32F6A0071220F /* piratetides4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = piratetides4.jpg; sourceTree = "<group>"; };
+		FA887CB820A32F6B0071220F /* sharkbiteship4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sharkbiteship4.jpg; sourceTree = "<group>"; };
+		FA887CB920A32F6B0071220F /* sharkbiteship5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sharkbiteship5.jpg; sourceTree = "<group>"; };
+		FA887CBA20A32F6B0071220F /* sharkbiteship2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sharkbiteship2.jpg; sourceTree = "<group>"; };
+		FA887CBB20A32F6B0071220F /* sharkbiteship3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sharkbiteship3.jpg; sourceTree = "<group>"; };
+		FA887CBC20A32F6B0071220F /* sharkbiteship1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sharkbiteship1.jpg; sourceTree = "<group>"; };
+		FA887CBE20A32F6B0071220F /* jakeneverland1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jakeneverland1.jpg; sourceTree = "<group>"; };
+		FA887CBF20A32F6B0071220F /* jakeneverland2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jakeneverland2.jpg; sourceTree = "<group>"; };
+		FA887CC020A32F6B0071220F /* jakeneverland3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jakeneverland3.jpg; sourceTree = "<group>"; };
+		FA887CC120A32F6B0071220F /* jakeneverland4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jakeneverland4.jpg; sourceTree = "<group>"; };
+		FA887CC220A32F6B0071220F /* jakeneverland5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jakeneverland5.jpg; sourceTree = "<group>"; };
+		FA887CC420A32F6B0071220F /* popupPirate6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = popupPirate6.jpg; sourceTree = "<group>"; };
+		FA887CC520A32F6B0071220F /* popupPirate5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = popupPirate5.jpg; sourceTree = "<group>"; };
+		FA887CC620A32F6B0071220F /* popupPirate4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = popupPirate4.jpg; sourceTree = "<group>"; };
+		FA887CC720A32F6B0071220F /* popupPirate1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = popupPirate1.jpg; sourceTree = "<group>"; };
+		FA887CC820A32F6B0071220F /* popupPirate3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = popupPirate3.jpg; sourceTree = "<group>"; };
+		FA887CC920A32F6B0071220F /* popupPirate2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = popupPirate2.jpg; sourceTree = "<group>"; };
+		FA887CCB20A32F6B0071220F /* deluxeship1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = deluxeship1.jpg; sourceTree = "<group>"; };
+		FA887CCD20A32F6B0071220F /* littletikes1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = littletikes1.jpg; sourceTree = "<group>"; };
+		FA887CCE20A32F6B0071220F /* littletikes2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = littletikes2.jpg; sourceTree = "<group>"; };
+		FA887CCF20A32F6B0071220F /* littletikes3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = littletikes3.jpg; sourceTree = "<group>"; };
+		FA887CD020A32F6B0071220F /* littletikes4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = littletikes4.jpg; sourceTree = "<group>"; };
+		FA887CD120A32F6B0071220F /* littletikes5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = littletikes5.jpg; sourceTree = "<group>"; };
+		FA887CD220A32F6B0071220F /* toydrive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toydrive.png; sourceTree = "<group>"; };
+		FA887CD420A32F6B0071220F /* buccaneerboat1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = buccaneerboat1.jpg; sourceTree = "<group>"; };
+		FA887CD520A32F6B0071220F /* buccaneerboat2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = buccaneerboat2.jpg; sourceTree = "<group>"; };
+		FA887CD620A32F6B0071220F /* buccaneerboat3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = buccaneerboat3.jpg; sourceTree = "<group>"; };
+		FA887CD720A32F6B0071220F /* buccaneerboat4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = buccaneerboat4.jpg; sourceTree = "<group>"; };
+		FA887D0720A32F9B0071220F /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		FA887D0A20A3306E0071220F /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +164,8 @@
 		FA887C6D20A24F350071220F /* Pirate Bay */ = {
 			isa = PBXGroup;
 			children = (
+				FA887D0920A330560071220F /* extension */,
+				FA887D0620A32F860071220F /* helper */,
 				FA887C9620A318D40071220F /* dataModel */,
 				FA887C8B20A2706E0071220F /* assets */,
 				FA887C8620A26B2A0071220F /* Controller */,
@@ -92,6 +190,8 @@
 		FA887C8B20A2706E0071220F /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				FA887C9A20A32F6A0071220F /* dvd */,
+				FA887CB620A32F6B0071220F /* toy */,
 				FA887C8C20A270880071220F /* piratebattle.pdf */,
 				FA887C8D20A270890071220F /* piratemap.pdf */,
 				FA887C8E20A270890071220F /* piratesofcaribbean.pdf */,
@@ -107,6 +207,194 @@
 				FA887C9720A318FC0071220F /* PirateBay.xcdatamodeld */,
 			);
 			path = dataModel;
+			sourceTree = "<group>";
+		};
+		FA887C9A20A32F6A0071220F /* dvd */ = {
+			isa = PBXGroup;
+			children = (
+				FA887C9B20A32F6A0071220F /* piratefairy */,
+				FA887C9E20A32F6A0071220F /* pirates */,
+				FA887CA520A32F6A0071220F /* piratesilicon */,
+				FA887CA720A32F6A0071220F /* piratecurse */,
+				FA887CA920A32F6A0071220F /* scooby */,
+				FA887CAB20A32F6A0071220F /* piratechest */,
+				FA887CAD20A32F6A0071220F /* captainjake */,
+				FA887CAF20A32F6A0071220F /* piratetides */,
+			);
+			path = dvd;
+			sourceTree = "<group>";
+		};
+		FA887C9B20A32F6A0071220F /* piratefairy */ = {
+			isa = PBXGroup;
+			children = (
+				FA887C9C20A32F6A0071220F /* piratefairy1.jpg */,
+				FA887C9D20A32F6A0071220F /* piratefairy2.jpg */,
+			);
+			path = piratefairy;
+			sourceTree = "<group>";
+		};
+		FA887C9E20A32F6A0071220F /* pirates */ = {
+			isa = PBXGroup;
+			children = (
+				FA887C9F20A32F6A0071220F /* pirates6.jpg */,
+				FA887CA020A32F6A0071220F /* pirates4.jpg */,
+				FA887CA120A32F6A0071220F /* pirates5.jpg */,
+				FA887CA220A32F6A0071220F /* pirates1.jpg */,
+				FA887CA320A32F6A0071220F /* pirates2.jpg */,
+				FA887CA420A32F6A0071220F /* pirates3.jpg */,
+			);
+			path = pirates;
+			sourceTree = "<group>";
+		};
+		FA887CA520A32F6A0071220F /* piratesilicon */ = {
+			isa = PBXGroup;
+			children = (
+				FA887CA620A32F6A0071220F /* piratesilicon1.jpg */,
+			);
+			path = piratesilicon;
+			sourceTree = "<group>";
+		};
+		FA887CA720A32F6A0071220F /* piratecurse */ = {
+			isa = PBXGroup;
+			children = (
+				FA887CA820A32F6A0071220F /* piratescurse1.jpg */,
+			);
+			path = piratecurse;
+			sourceTree = "<group>";
+		};
+		FA887CA920A32F6A0071220F /* scooby */ = {
+			isa = PBXGroup;
+			children = (
+				FA887CAA20A32F6A0071220F /* scooby1.jpg */,
+			);
+			path = scooby;
+			sourceTree = "<group>";
+		};
+		FA887CAB20A32F6A0071220F /* piratechest */ = {
+			isa = PBXGroup;
+			children = (
+				FA887CAC20A32F6A0071220F /* piratechest1.jpg */,
+			);
+			path = piratechest;
+			sourceTree = "<group>";
+		};
+		FA887CAD20A32F6A0071220F /* captainjake */ = {
+			isa = PBXGroup;
+			children = (
+				FA887CAE20A32F6A0071220F /* captainjake1.jpg */,
+			);
+			path = captainjake;
+			sourceTree = "<group>";
+		};
+		FA887CAF20A32F6A0071220F /* piratetides */ = {
+			isa = PBXGroup;
+			children = (
+				FA887CB020A32F6A0071220F /* piratetides1.jpg */,
+				FA887CB120A32F6A0071220F /* piratetides3.jpg */,
+				FA887CB220A32F6A0071220F /* piratetides2.jpg */,
+				FA887CB320A32F6A0071220F /* piratetides6.jpg */,
+				FA887CB420A32F6A0071220F /* piratetides5.jpg */,
+				FA887CB520A32F6A0071220F /* piratetides4.jpg */,
+			);
+			path = piratetides;
+			sourceTree = "<group>";
+		};
+		FA887CB620A32F6B0071220F /* toy */ = {
+			isa = PBXGroup;
+			children = (
+				FA887CB720A32F6B0071220F /* sharkbiteship */,
+				FA887CBD20A32F6B0071220F /* jakeneverland */,
+				FA887CC320A32F6B0071220F /* popupPirate */,
+				FA887CCA20A32F6B0071220F /* deluxeship */,
+				FA887CCC20A32F6B0071220F /* littletikes */,
+				FA887CD220A32F6B0071220F /* toydrive.png */,
+				FA887CD320A32F6B0071220F /* buccaneerBoat */,
+			);
+			path = toy;
+			sourceTree = "<group>";
+		};
+		FA887CB720A32F6B0071220F /* sharkbiteship */ = {
+			isa = PBXGroup;
+			children = (
+				FA887CB820A32F6B0071220F /* sharkbiteship4.jpg */,
+				FA887CB920A32F6B0071220F /* sharkbiteship5.jpg */,
+				FA887CBA20A32F6B0071220F /* sharkbiteship2.jpg */,
+				FA887CBB20A32F6B0071220F /* sharkbiteship3.jpg */,
+				FA887CBC20A32F6B0071220F /* sharkbiteship1.jpg */,
+			);
+			path = sharkbiteship;
+			sourceTree = "<group>";
+		};
+		FA887CBD20A32F6B0071220F /* jakeneverland */ = {
+			isa = PBXGroup;
+			children = (
+				FA887CBE20A32F6B0071220F /* jakeneverland1.jpg */,
+				FA887CBF20A32F6B0071220F /* jakeneverland2.jpg */,
+				FA887CC020A32F6B0071220F /* jakeneverland3.jpg */,
+				FA887CC120A32F6B0071220F /* jakeneverland4.jpg */,
+				FA887CC220A32F6B0071220F /* jakeneverland5.jpg */,
+			);
+			path = jakeneverland;
+			sourceTree = "<group>";
+		};
+		FA887CC320A32F6B0071220F /* popupPirate */ = {
+			isa = PBXGroup;
+			children = (
+				FA887CC420A32F6B0071220F /* popupPirate6.jpg */,
+				FA887CC520A32F6B0071220F /* popupPirate5.jpg */,
+				FA887CC620A32F6B0071220F /* popupPirate4.jpg */,
+				FA887CC720A32F6B0071220F /* popupPirate1.jpg */,
+				FA887CC820A32F6B0071220F /* popupPirate3.jpg */,
+				FA887CC920A32F6B0071220F /* popupPirate2.jpg */,
+			);
+			path = popupPirate;
+			sourceTree = "<group>";
+		};
+		FA887CCA20A32F6B0071220F /* deluxeship */ = {
+			isa = PBXGroup;
+			children = (
+				FA887CCB20A32F6B0071220F /* deluxeship1.jpg */,
+			);
+			path = deluxeship;
+			sourceTree = "<group>";
+		};
+		FA887CCC20A32F6B0071220F /* littletikes */ = {
+			isa = PBXGroup;
+			children = (
+				FA887CCD20A32F6B0071220F /* littletikes1.jpg */,
+				FA887CCE20A32F6B0071220F /* littletikes2.jpg */,
+				FA887CCF20A32F6B0071220F /* littletikes3.jpg */,
+				FA887CD020A32F6B0071220F /* littletikes4.jpg */,
+				FA887CD120A32F6B0071220F /* littletikes5.jpg */,
+			);
+			path = littletikes;
+			sourceTree = "<group>";
+		};
+		FA887CD320A32F6B0071220F /* buccaneerBoat */ = {
+			isa = PBXGroup;
+			children = (
+				FA887CD420A32F6B0071220F /* buccaneerboat1.jpg */,
+				FA887CD520A32F6B0071220F /* buccaneerboat2.jpg */,
+				FA887CD620A32F6B0071220F /* buccaneerboat3.jpg */,
+				FA887CD720A32F6B0071220F /* buccaneerboat4.jpg */,
+			);
+			path = buccaneerBoat;
+			sourceTree = "<group>";
+		};
+		FA887D0620A32F860071220F /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				FA887D0720A32F9B0071220F /* Utility.swift */,
+			);
+			path = helper;
+			sourceTree = "<group>";
+		};
+		FA887D0920A330560071220F /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				FA887D0A20A3306E0071220F /* String+Extension.swift */,
+			);
+			path = extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,13 +455,59 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA887CDC20A32F6B0071220F /* pirates5.jpg in Resources */,
+				FA887CE920A32F6B0071220F /* piratetides5.jpg in Resources */,
+				FA887CD820A32F6B0071220F /* piratefairy1.jpg in Resources */,
+				FA887CEE20A32F6B0071220F /* sharkbiteship3.jpg in Resources */,
+				FA887D0120A32F6B0071220F /* toydrive.png in Resources */,
+				FA887CFD20A32F6B0071220F /* littletikes2.jpg in Resources */,
+				FA887CFB20A32F6B0071220F /* deluxeship1.jpg in Resources */,
 				FA887C7920A24F360071220F /* LaunchScreen.storyboard in Resources */,
+				FA887CF620A32F6B0071220F /* popupPirate5.jpg in Resources */,
+				FA887CDE20A32F6B0071220F /* pirates2.jpg in Resources */,
+				FA887D0220A32F6B0071220F /* buccaneerboat1.jpg in Resources */,
+				FA887CEF20A32F6B0071220F /* sharkbiteship1.jpg in Resources */,
+				FA887CEB20A32F6B0071220F /* sharkbiteship4.jpg in Resources */,
 				FA887C8F20A270890071220F /* piratebattle.pdf in Resources */,
 				FA887C9320A3178E0071220F /* products.json in Resources */,
+				FA887CE620A32F6B0071220F /* piratetides3.jpg in Resources */,
+				FA887CFE20A32F6B0071220F /* littletikes3.jpg in Resources */,
 				FA887C9120A270890071220F /* piratesofcaribbean.pdf in Resources */,
+				FA887CFC20A32F6B0071220F /* littletikes1.jpg in Resources */,
+				FA887CF020A32F6B0071220F /* jakeneverland1.jpg in Resources */,
+				FA887CFA20A32F6B0071220F /* popupPirate2.jpg in Resources */,
+				FA887CD920A32F6B0071220F /* piratefairy2.jpg in Resources */,
+				FA887CF520A32F6B0071220F /* popupPirate6.jpg in Resources */,
+				FA887CE520A32F6B0071220F /* piratetides1.jpg in Resources */,
+				FA887CEA20A32F6B0071220F /* piratetides4.jpg in Resources */,
+				FA887CE020A32F6B0071220F /* piratesilicon1.jpg in Resources */,
+				FA887D0420A32F6B0071220F /* buccaneerboat3.jpg in Resources */,
+				FA887CE820A32F6B0071220F /* piratetides6.jpg in Resources */,
+				FA887CF320A32F6B0071220F /* jakeneverland4.jpg in Resources */,
 				FA887C9020A270890071220F /* piratemap.pdf in Resources */,
+				FA887CF120A32F6B0071220F /* jakeneverland2.jpg in Resources */,
+				FA887CF720A32F6B0071220F /* popupPirate4.jpg in Resources */,
+				FA887CDA20A32F6B0071220F /* pirates6.jpg in Resources */,
+				FA887CE420A32F6B0071220F /* captainjake1.jpg in Resources */,
 				FA887C7620A24F360071220F /* Assets.xcassets in Resources */,
 				FA887C7420A24F350071220F /* Main.storyboard in Resources */,
+				FA887CE720A32F6B0071220F /* piratetides2.jpg in Resources */,
+				FA887D0020A32F6B0071220F /* littletikes5.jpg in Resources */,
+				FA887CF920A32F6B0071220F /* popupPirate3.jpg in Resources */,
+				FA887CED20A32F6B0071220F /* sharkbiteship2.jpg in Resources */,
+				FA887D0320A32F6B0071220F /* buccaneerboat2.jpg in Resources */,
+				FA887CFF20A32F6B0071220F /* littletikes4.jpg in Resources */,
+				FA887D0520A32F6B0071220F /* buccaneerboat4.jpg in Resources */,
+				FA887CE320A32F6B0071220F /* piratechest1.jpg in Resources */,
+				FA887CF420A32F6B0071220F /* jakeneverland5.jpg in Resources */,
+				FA887CDF20A32F6B0071220F /* pirates3.jpg in Resources */,
+				FA887CF820A32F6B0071220F /* popupPirate1.jpg in Resources */,
+				FA887CF220A32F6B0071220F /* jakeneverland3.jpg in Resources */,
+				FA887CE220A32F6B0071220F /* scooby1.jpg in Resources */,
+				FA887CDD20A32F6B0071220F /* pirates1.jpg in Resources */,
+				FA887CE120A32F6B0071220F /* piratescurse1.jpg in Resources */,
+				FA887CDB20A32F6B0071220F /* pirates4.jpg in Resources */,
+				FA887CEC20A32F6B0071220F /* sharkbiteship5.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,7 +519,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA887C8820A26B4C0071220F /* PromoContentVC.swift in Sources */,
+				FA887D0B20A3306E0071220F /* String+Extension.swift in Sources */,
 				FA887C8A20A26B690071220F /* HomeVC.swift in Sources */,
+				FA887D0820A32F9B0071220F /* Utility.swift in Sources */,
 				FA887C9920A318FC0071220F /* PirateBay.xcdatamodeld in Sources */,
 				FA887C6F20A24F350071220F /* AppDelegate.swift in Sources */,
 				FA887C9520A317B20071220F /* CoreDataStack.swift in Sources */,

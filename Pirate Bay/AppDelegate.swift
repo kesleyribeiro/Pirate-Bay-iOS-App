@@ -7,15 +7,18 @@
 //
 
 import UIKit
+import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var coreDataStack = CoreDataStack()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        loadProducts()
+
         return true
     }
 
@@ -39,6 +42,184 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    
+    private func loadProducts() {
+        
+        let managedObjectContext = coreDataStack.persistentContainer.viewContext
+        
+        let url = Bundle.main.url(forResource: "products", withExtension: "json")
+        
+        if let url = url {
+            let data = try? Data(contentsOf: url)
+            
+            do {
+                guard let data = data else {
+                    return
+                }
+                
+                let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as! NSDictionary
+                
+                let jsonArray = jsonResult.value(forKey: "products") as! NSArray
+                
+                for json in jsonArray {
+                    
+                    let productData = json as! [String: Any]
+                    
+                    guard let productId = productData["id"] else { return }
+                    guard let name = productData["name"] else { return }
+                    guard let type = productData["type"] else { return }
+                    
+                    let product = Product(context: managedObjectContext)
+                    product.id = productId as? String
+                    product.name = name as? String
+                    product.type = type as? String
+                    
+                    if let regularPrice = productData["regularPrice"] {
+                        product.regularPrice = (regularPrice as? Double)!
+                    }
+                    
+                    if let salePrice = productData["salePrice"] {
+                        product.salePrice = (salePrice as? Double)!
+                    }
+                    
+                    if let quantity = productData["quantity"] {
+                        product.quantity = (quantity as AnyObject).int16Value
+                    }
+                    
+                    if let rating = productData["rating"] {
+                        product.rating = (rating as AnyObject).int16Value
+                    }
+                    
+                    let manufacturer = Manufacturer(context: managedObjectContext)
+                    manufacturer.id = (productData["manufacturerId"] as AnyObject).int16Value
+                    manufacturer.name = productData["manufacturerName"] as? String
+                    product.manufacturer = manufacturer
+                    
+                    let productImages = product.productImages?.mutableCopy() as! NSMutableSet
+                    var mainImageName: String?
+                    
+                    if let imageNames = productData["images"] {
+                        for imageName in imageNames as! NSArray {
+                            let productImage = ProductImage(context: managedObjectContext)
+                            
+                            let currentImageName = imageName as? String
+                            let currentImage = Utility.image(withName: currentImageName, andType: "jpg")
+                            
+                            if let currentImage = currentImage, let imageData = UIImageJPEGRepresentation(currentImage, 1.0) {
+                                productImage.image = NSData.init(data: imageData) as Data
+                            }
+                            
+                            productImage.name = currentImageName
+                            
+                            if mainImageName == nil && currentImageName?.contains("1") == true {
+                                mainImageName = currentImageName
+                            }
+                            
+                            productImages.add(productImage)
+                        }
+
+                        product.productImages = productImages.copy() as? NSSet
+                    }
+                    
+                    product.mainImage = mainImageName
+                    
+                    // Product Summary
+                    
+                    if let summary = productData["summary"] {
+                        product.summary = summary as? String
+                    }
+                    
+                    
+                    // Product Info
+                    let productInfo = product.productInfo?.mutableCopy() as! NSMutableSet
+                    
+                    if let description1 = productData["description1"] {
+                        let temp = ProductInfo(context: managedObjectContext)
+                        temp.info = description1 as? String
+                        temp.type = "description"
+                        productInfo.add(temp)
+                    }
+                    
+                    if let description2 = productData["description2"] {
+                        let temp = ProductInfo(context: managedObjectContext)
+                        temp.info = description2 as? String
+                        temp.type = "description"
+                        productInfo.add(temp)
+                    }
+                    
+                    if let description3 = productData["description3"] {
+                        let temp = ProductInfo(context: managedObjectContext)
+                        temp.info = description3 as? String
+                        temp.type = "description"
+                        productInfo.add(temp)
+                    }
+                    
+                    if let weight = productData["weight"] {
+                        let temp = ProductInfo(context: managedObjectContext)
+                        temp.title = "Item Weight"
+                        temp.info = weight as? String
+                        temp.type = "specs"
+                        productInfo.add(temp)
+                    }
+                    
+                    if let dimension = productData["dimension"] {
+                        let temp = ProductInfo(context: managedObjectContext)
+                        temp.title = "Product Dimension"
+                        temp.info = dimension as? String
+                        temp.type = "specs"
+                        productInfo.add(temp)
+                    }
+                    
+                    if let ageGroup = productData["ageGroup"] {
+                        let temp = ProductInfo(context: managedObjectContext)
+                        temp.title = "Age Group"
+                        temp.info = ageGroup as? String
+                        temp.type = "specs"
+                        productInfo.add(temp)
+                    }
+                    
+                    if let modelNumber = productData["modelNumber"] {
+                        let temp = ProductInfo(context: managedObjectContext)
+                        temp.title = "Model Number"
+                        temp.info = modelNumber as? String
+                        temp.type = "specs"
+                        productInfo.add(temp)
+                    }
+                    
+                    if let format = productData["format"] {
+                        let temp = ProductInfo(context: managedObjectContext)
+                        temp.title = "Format"
+                        temp.info = format as? String
+                        temp.type = "specs"
+                        productInfo.add(temp)
+                    }
+                    
+                    if let language = productData["language"] {
+                        let temp = ProductInfo(context: managedObjectContext)
+                        temp.title = "Language"
+                        temp.info = language as? String
+                        temp.type = "specs"
+                        productInfo.add(temp)
+                    }
+                    
+                    if let region = productData["region"] {
+                        let temp = ProductInfo(context: managedObjectContext)
+                        temp.title = "Region"
+                        temp.info = region as? String
+                        temp.type = "specs"
+                        productInfo.add(temp)
+                    }
+                    
+                    product.productInfo = productInfo.copy() as? NSSet
+                }
+                
+                coreDataStack.saveContext()
+            }
+            catch let error as NSError {
+                print("Error in parsing products.json: \(error.localizedDescription)")
+            }
+        }
     }
 
 
