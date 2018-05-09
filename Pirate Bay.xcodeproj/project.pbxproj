@@ -1,0 +1,371 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA887C6F20A24F350071220F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA887C6E20A24F350071220F /* AppDelegate.swift */; };
+		FA887C7420A24F350071220F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA887C7220A24F350071220F /* Main.storyboard */; };
+		FA887C7620A24F360071220F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA887C7520A24F360071220F /* Assets.xcassets */; };
+		FA887C7920A24F360071220F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA887C7720A24F360071220F /* LaunchScreen.storyboard */; };
+		FA887C8820A26B4C0071220F /* PromoContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA887C8720A26B4C0071220F /* PromoContentVC.swift */; };
+		FA887C8A20A26B690071220F /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA887C8920A26B690071220F /* HomeVC.swift */; };
+		FA887C8F20A270890071220F /* piratebattle.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FA887C8C20A270880071220F /* piratebattle.pdf */; };
+		FA887C9020A270890071220F /* piratemap.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FA887C8D20A270890071220F /* piratemap.pdf */; };
+		FA887C9120A270890071220F /* piratesofcaribbean.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FA887C8E20A270890071220F /* piratesofcaribbean.pdf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FA887C6B20A24F350071220F /* Pirate Bay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pirate Bay.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA887C6E20A24F350071220F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA887C7320A24F350071220F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA887C7520A24F360071220F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA887C7820A24F360071220F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA887C7A20A24F360071220F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA887C8720A26B4C0071220F /* PromoContentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoContentVC.swift; sourceTree = "<group>"; };
+		FA887C8920A26B690071220F /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		FA887C8C20A270880071220F /* piratebattle.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = piratebattle.pdf; sourceTree = "<group>"; };
+		FA887C8D20A270890071220F /* piratemap.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = piratemap.pdf; sourceTree = "<group>"; };
+		FA887C8E20A270890071220F /* piratesofcaribbean.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = piratesofcaribbean.pdf; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA887C6820A24F350071220F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA887C6220A24F350071220F = {
+			isa = PBXGroup;
+			children = (
+				FA887C6D20A24F350071220F /* Pirate Bay */,
+				FA887C6C20A24F350071220F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA887C6C20A24F350071220F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA887C6B20A24F350071220F /* Pirate Bay.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA887C6D20A24F350071220F /* Pirate Bay */ = {
+			isa = PBXGroup;
+			children = (
+				FA887C8B20A2706E0071220F /* assets */,
+				FA887C8620A26B2A0071220F /* Controller */,
+				FA887C6E20A24F350071220F /* AppDelegate.swift */,
+				FA887C7220A24F350071220F /* Main.storyboard */,
+				FA887C7520A24F360071220F /* Assets.xcassets */,
+				FA887C7720A24F360071220F /* LaunchScreen.storyboard */,
+				FA887C7A20A24F360071220F /* Info.plist */,
+			);
+			path = "Pirate Bay";
+			sourceTree = "<group>";
+		};
+		FA887C8620A26B2A0071220F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA887C8720A26B4C0071220F /* PromoContentVC.swift */,
+				FA887C8920A26B690071220F /* HomeVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FA887C8B20A2706E0071220F /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				FA887C8C20A270880071220F /* piratebattle.pdf */,
+				FA887C8D20A270890071220F /* piratemap.pdf */,
+				FA887C8E20A270890071220F /* piratesofcaribbean.pdf */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA887C6A20A24F350071220F /* Pirate Bay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA887C7D20A24F360071220F /* Build configuration list for PBXNativeTarget "Pirate Bay" */;
+			buildPhases = (
+				FA887C6720A24F350071220F /* Sources */,
+				FA887C6820A24F350071220F /* Frameworks */,
+				FA887C6920A24F350071220F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pirate Bay";
+			productName = "Pirate Bay";
+			productReference = FA887C6B20A24F350071220F /* Pirate Bay.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA887C6320A24F350071220F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Kesley Ribeiro";
+				TargetAttributes = {
+					FA887C6A20A24F350071220F = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = FA887C6620A24F350071220F /* Build configuration list for PBXProject "Pirate Bay" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA887C6220A24F350071220F;
+			productRefGroup = FA887C6C20A24F350071220F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA887C6A20A24F350071220F /* Pirate Bay */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA887C6920A24F350071220F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA887C7920A24F360071220F /* LaunchScreen.storyboard in Resources */,
+				FA887C8F20A270890071220F /* piratebattle.pdf in Resources */,
+				FA887C9120A270890071220F /* piratesofcaribbean.pdf in Resources */,
+				FA887C9020A270890071220F /* piratemap.pdf in Resources */,
+				FA887C7620A24F360071220F /* Assets.xcassets in Resources */,
+				FA887C7420A24F350071220F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA887C6720A24F350071220F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA887C8820A26B4C0071220F /* PromoContentVC.swift in Sources */,
+				FA887C8A20A26B690071220F /* HomeVC.swift in Sources */,
+				FA887C6F20A24F350071220F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FA887C7220A24F350071220F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA887C7320A24F350071220F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA887C7720A24F360071220F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA887C7820A24F360071220F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA887C7B20A24F360071220F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA887C7C20A24F360071220F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA887C7E20A24F360071220F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A3QR56LUBZ;
+				INFOPLIST_FILE = "Pirate Bay/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.br.kesleyribeiro.Pirate-Bay";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA887C7F20A24F360071220F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A3QR56LUBZ;
+				INFOPLIST_FILE = "Pirate Bay/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.br.kesleyribeiro.Pirate-Bay";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA887C6620A24F350071220F /* Build configuration list for PBXProject "Pirate Bay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA887C7B20A24F360071220F /* Debug */,
+				FA887C7C20A24F360071220F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA887C7D20A24F360071220F /* Build configuration list for PBXNativeTarget "Pirate Bay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA887C7E20A24F360071220F /* Debug */,
+				FA887C7F20A24F360071220F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA887C6320A24F350071220F /* Project object */;
+}
