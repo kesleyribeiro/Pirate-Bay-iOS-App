@@ -14,6 +14,7 @@
 		FA03319C20A38508009AEB73 /* ProductsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA03319B20A38508009AEB73 /* ProductsTVC.swift */; };
 		FA03319E20A38520009AEB73 /* ProductsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA03319D20A38520009AEB73 /* ProductsTVCell.swift */; };
 		FA0331A020A386CD009AEB73 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA03319F20A386CD009AEB73 /* Double+Extension.swift */; };
+		FA0331A220A38D27009AEB73 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0331A120A38D27009AEB73 /* UIColor+Extension.swift */; };
 		FA887C6F20A24F350071220F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA887C6E20A24F350071220F /* AppDelegate.swift */; };
 		FA887C7420A24F350071220F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA887C7220A24F350071220F /* Main.storyboard */; };
 		FA887C7620A24F360071220F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA887C7520A24F360071220F /* Assets.xcassets */; };
@@ -84,6 +85,7 @@
 		FA03319B20A38508009AEB73 /* ProductsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsTVC.swift; sourceTree = "<group>"; };
 		FA03319D20A38520009AEB73 /* ProductsTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsTVCell.swift; sourceTree = "<group>"; };
 		FA03319F20A386CD009AEB73 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		FA0331A120A38D27009AEB73 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		FA887C6B20A24F350071220F /* Pirate Bay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pirate Bay.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA887C6E20A24F350071220F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA887C7320A24F350071220F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -462,6 +464,7 @@
 			children = (
 				FA887D0A20A3306E0071220F /* String+Extension.swift */,
 				FA03319F20A386CD009AEB73 /* Double+Extension.swift */,
+				FA0331A120A38D27009AEB73 /* UIColor+Extension.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -599,6 +602,7 @@
 				FA03319C20A38508009AEB73 /* ProductsTVC.swift in Sources */,
 				FA0331A020A386CD009AEB73 /* Double+Extension.swift in Sources */,
 				FA887C6F20A24F350071220F /* AppDelegate.swift in Sources */,
+				FA0331A220A38D27009AEB73 /* UIColor+Extension.swift in Sources */,
 				FA03319E20A38520009AEB73 /* ProductsTVCell.swift in Sources */,
 				FA887C9520A317B20071220F /* CoreDataStack.swift in Sources */,
 			);

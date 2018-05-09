@@ -24,7 +24,20 @@ struct ProductService {
             return products
         }
         catch let error as NSError {
-            fatalError("Error is getting product list: \(error.localizedDescription)")
+            fatalError("Error in getting product list: \(error.localizedDescription)")
+        }
+    }
+    
+    internal static func search() -> [Product] {
+        
+        let request: NSFetchRequest<Product> = Product.fetchRequest()
+        
+        do {
+            let products = try self.managedObjectContext.fetch(request)
+            return products
+        }
+        catch let error as NSError {
+            fatalError("Error in getting all products: \(error.localizedDescription)")
         }
     }
     
