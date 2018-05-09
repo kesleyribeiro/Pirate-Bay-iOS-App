@@ -11,6 +11,7 @@ Argghh ... Aye aye Captain! .. Let's sail!!
 * Keyboard Notification
 * Multiple types of view controllers in a single scene
 * Multiple collection views in a single scene
+* Tab Bar Controller
 * IBDesignable and IBInspectable
 * Automatic page sliding
 * Custom XIB
