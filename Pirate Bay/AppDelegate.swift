@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        deleteProducts()
         loadProducts()
 
         return true
@@ -42,6 +43,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    
+    private func deleteProducts() {
+        let managedObjectContext = coreDataStack.persistentContainer.viewContext
+        let productRequest: NSFetchRequest<Product> = Product.fetchRequest()
+        let manufacturerRequest: NSFetchRequest<Manufacturer> = Manufacturer.fetchRequest()
+        let productInfoRequest: NSFetchRequest<ProductInfo> = ProductInfo.fetchRequest()
+        let productImageRequest: NSFetchRequest<ProductImage> = ProductImage.fetchRequest()
+        
+        var deleteRequest: NSBatchDeleteRequest
+        
+        do {
+            deleteRequest = NSBatchDeleteRequest(fetchRequest: productRequest as! NSFetchRequest<NSFetchRequestResult>)
+            let _ = try managedObjectContext.execute(deleteRequest) as! NSBatchDeleteResult
+            
+            deleteRequest = NSBatchDeleteRequest(fetchRequest: manufacturerRequest as! NSFetchRequest<NSFetchRequestResult>)
+            let _ = try managedObjectContext.execute(deleteRequest) as! NSBatchDeleteResult
+            
+            deleteRequest = NSBatchDeleteRequest(fetchRequest: productInfoRequest as! NSFetchRequest<NSFetchRequestResult>)
+            let _ = try managedObjectContext.execute(deleteRequest) as! NSBatchDeleteResult
+            
+            deleteRequest = NSBatchDeleteRequest(fetchRequest: productImageRequest as! NSFetchRequest<NSFetchRequestResult>)
+            let _ = try managedObjectContext.execute(deleteRequest) as! NSBatchDeleteResult
+        }
+        catch {}
     }
     
     private func loadProducts() {
