@@ -31,3 +31,10 @@ Argghh ... Aye aye Captain! .. Let's sail!!
 * Picker View
 * Unwind Segue
 * Storyboard Reference
+
+
+Screenshots:
+
+<h2>Home view</h2><br>
+
+![alt tag](https://github.com/kesleyribeiro/Pirate-Bay-iOS-App/blob/master/screen%20shots/Home-view.png)
