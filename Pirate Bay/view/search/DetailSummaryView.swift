@@ -25,6 +25,10 @@ class DetailSummaryView: UIView {
     @IBOutlet weak var productImagesView: UIImageView!
     @IBOutlet weak var userRating: UserRating!
     
+    // MARK: - Properties
+    
+    var buttonContainerView: UIView?
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
@@ -34,6 +38,9 @@ class DetailSummaryView: UIView {
     }
     
     internal func updateView(with product: Product) {
+        
+        // Make sure no previous view still exists in the current view
+        buttonContainerView?.removeFromSuperview()
         
         // Set default state
         qtyLeftLabel.isHidden = true
@@ -47,7 +54,6 @@ class DetailSummaryView: UIView {
         manufacturerLabel.text = product.manufacturer?.name
         productNameLabel.text = product.name
         userRating.rating = Int(product.rating)
-        
         
         let listPriceAttributedString = NSAttributedString(string: product.regularPrice.currencyFormatter, attributes: [NSAttributedStringKey.strikethroughStyle: 1])
         listPriceLabel.attributedText = listPriceAttributedString
@@ -86,8 +92,52 @@ class DetailSummaryView: UIView {
             if let mainImage = allImages.first {
                 productImagesView.image = Utility.image(withName: mainImage.name, andType: "jpg")
             }
+            
+            let imageCount = allImages.count
+            var arrayButtons = [UIButton]()
+            buttonContainerView = UIView()
+            
+            for x in 0..<imageCount {
+                let image = Utility.image(withName: allImages[x].name, andType: "jpg")
+                let buttonImage = image?.resizeImage(newHeight: 40.0)
+                
+                let button = UIButton()
+                button.setTitle(allImages[x].name, for: .normal)
+                button.imageView?.contentMode = .scaleAspectFit
+                button.setImage(buttonImage, for: .normal)
+                button.imageEdgeInsets = UIEdgeInsetsMake(5.0, 5.0, 5.0, 5.0)
+                button.contentMode = .center
+                button.layer.borderWidth = 1
+                button.layer.borderColor = UIColor.lightGray.cgColor
+                button.layer.cornerRadius = 5
+                
+                if x == 0 {
+                    button.frame = CGRect(x: 0, y: 0, width: 50.0, height: 50.0)
+                } else {
+                    button.frame = CGRect(x: arrayButtons[x-1].frame.maxX + 10, y: arrayButtons[x-1].frame.minY, width: 50.0, height: 50.0)
+                }
+                
+                arrayButtons.append(button)
+                
+                button.addTarget(self, action: #selector(buttonAction(_:)), for: .touchUpInside)
+                
+                buttonContainerView?.addSubview(button)
+            }
+            
+            let containerWidth = imageCount * 50 + (imageCount - 1) * 10
+
+            buttonContainerView?.frame = CGRect(x: 20, y: Int(productImagesView.frame.maxY + 10), width: containerWidth, height: 50)
+            
+            self.addSubview(buttonContainerView!)
         }
-        
+    }
+    
+    @objc func buttonAction(_ sender: UIButton) {
+        if let imageName = sender.currentTitle {
+            let image = Utility.image(withName: imageName, andType: "jpg")
+            productImagesView.image = image
+            productImagesView.contentMode = .scaleAspectFit
+        }
     }
     
 }

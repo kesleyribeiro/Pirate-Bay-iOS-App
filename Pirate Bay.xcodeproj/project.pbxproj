@@ -21,6 +21,7 @@
 		FA1216A820A61E59000AB173 /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1216A720A61E59000AB173 /* MyButton.swift */; };
 		FA1216AA20A62472000AB173 /* ProductDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1216A920A62472000AB173 /* ProductDetailVC.swift */; };
 		FA1216AC20A624B1000AB173 /* DetailSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1216AB20A624B1000AB173 /* DetailSummaryView.swift */; };
+		FA1216AE20A64D94000AB173 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1216AD20A64D94000AB173 /* UIImage+Extension.swift */; };
 		FA887C6F20A24F350071220F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA887C6E20A24F350071220F /* AppDelegate.swift */; };
 		FA887C7420A24F350071220F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA887C7220A24F350071220F /* Main.storyboard */; };
 		FA887C7620A24F360071220F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA887C7520A24F360071220F /* Assets.xcassets */; };
@@ -98,6 +99,7 @@
 		FA1216A720A61E59000AB173 /* MyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
 		FA1216A920A62472000AB173 /* ProductDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailVC.swift; sourceTree = "<group>"; };
 		FA1216AB20A624B1000AB173 /* DetailSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSummaryView.swift; sourceTree = "<group>"; };
+		FA1216AD20A64D94000AB173 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		FA887C6B20A24F350071220F /* Pirate Bay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pirate Bay.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA887C6E20A24F350071220F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA887C7320A24F350071220F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -483,6 +485,7 @@
 				FA887D0A20A3306E0071220F /* String+Extension.swift */,
 				FA03319F20A386CD009AEB73 /* Double+Extension.swift */,
 				FA0331A120A38D27009AEB73 /* UIColor+Extension.swift */,
+				FA1216AD20A64D94000AB173 /* UIImage+Extension.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -615,6 +618,7 @@
 				FA887C8820A26B4C0071220F /* PromoContentVC.swift in Sources */,
 				FA03318F20A3638B009AEB73 /* ProductService.swift in Sources */,
 				FA1216AC20A624B1000AB173 /* DetailSummaryView.swift in Sources */,
+				FA1216AE20A64D94000AB173 /* UIImage+Extension.swift in Sources */,
 				FA1216A820A61E59000AB173 /* MyButton.swift in Sources */,
 				FA887D0B20A3306E0071220F /* String+Extension.swift in Sources */,
 				FA887C8A20A26B690071220F /* HomeVC.swift in Sources */,

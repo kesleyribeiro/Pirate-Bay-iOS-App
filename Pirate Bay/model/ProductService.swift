@@ -10,7 +10,7 @@ import Foundation
 import CoreData
 
 struct ProductService {
-    
+
     static var managedObjectContext = CoreDataStack().persistentContainer.viewContext
     
     internal static func products(category type: String) -> [Product] {
@@ -18,7 +18,7 @@ struct ProductService {
         let request: NSFetchRequest<Product> = Product.fetchRequest()
         
         request.predicate = NSPredicate(format: "type == %@", type)
-        
+
         do {
             let products = try self.managedObjectContext.fetch(request)
             return products
@@ -40,6 +40,6 @@ struct ProductService {
             fatalError("Error in getting all products: \(error.localizedDescription)")
         }
     }
-    
+
 }
 
