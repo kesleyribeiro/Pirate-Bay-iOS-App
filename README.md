@@ -33,12 +33,12 @@ Argghh ... Aye aye Captain! .. Let's sail!!
 * Storyboard Reference
 
 
-Screenshots:
+<h2>Screenshots:</h2>
 
-<h2>Home view</h2><br>
+<br><h2>* Home view</h2><br>
 
 ![alt tag](https://github.com/kesleyribeiro/Pirate-Bay-iOS-App/blob/master/screen%20shots/Home-view.png)
 
-<h2>Products view</h2><br>
+<br><h2>* Products view</h2><br>
 
 ![alt tag](https://github.com/kesleyribeiro/Pirate-Bay-iOS-App/blob/master/screen%20shots/Products-view.png)
