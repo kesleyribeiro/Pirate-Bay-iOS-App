@@ -35,17 +35,17 @@
                                                     <segue destination="N0f-pz-68U" kind="embed" id="z49-sc-npD"/>
                                                 </connections>
                                             </containerView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Featured Toys" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6A-5I-IAp">
-                                                <rect key="frame" x="10" y="152" width="96.5" height="15"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Featured Toys" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6A-5I-IAp">
+                                                <rect key="frame" x="10" y="150" width="96.5" height="15"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="15" id="Vuy-Ab-RPI"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="W7P-hT-Cu8" userLabel="Toy CollectionView">
-                                                <rect key="frame" x="0.0" y="165" width="213.5" height="130"/>
+                                                <rect key="frame" x="0.0" y="168" width="213.5" height="130"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="130" id="Zb3-Us-hFG"/>
@@ -64,7 +64,7 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
-                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buccaneerboat1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="f5V-hf-Vli">
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buccaneerboat1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="f5V-hf-Vli">
                                                                     <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                                 </imageView>
                                                             </subviews>
@@ -85,15 +85,31 @@
                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="eeL-tx-nzK"/>
                                                 </connections>
                                             </collectionView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="COV-GY-FSf">
+                                                <rect key="frame" x="213" y="168" width="106.5" height="130"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="toydrive.png" translatesAutoresizingMaskIntoConstraints="NO" id="RGM-9P-1Tb">
+                                                        <rect key="frame" x="0.0" y="0.0" width="106.5" height="130"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="130" id="6b9-TD-ZXO"/>
+                                                    <constraint firstAttribute="bottom" secondItem="RGM-9P-1Tb" secondAttribute="bottom" id="Be0-xd-eqB"/>
+                                                    <constraint firstItem="RGM-9P-1Tb" firstAttribute="leading" secondItem="COV-GY-FSf" secondAttribute="leading" id="Hw9-FY-PmV"/>
+                                                    <constraint firstItem="RGM-9P-1Tb" firstAttribute="top" secondItem="COV-GY-FSf" secondAttribute="top" id="jVG-eu-y4W"/>
+                                                    <constraint firstAttribute="trailing" secondItem="RGM-9P-1Tb" secondAttribute="trailing" id="pSP-8r-yxj"/>
+                                                </constraints>
+                                            </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ldI-Ws-AE8" userLabel="Line separator">
-                                                <rect key="frame" x="10" y="300" width="300" height="1"/>
+                                                <rect key="frame" x="10" y="302" width="300" height="1"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="g2g-eV-2JG"/>
                                                 </constraints>
                                             </view>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YyO-8x-Xlr" userLabel="DVD CollectionView">
-                                                <rect key="frame" x="0.0" y="323" width="320" height="130"/>
+                                                <rect key="frame" x="0.0" y="325" width="320" height="130"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="20" minimumInteritemSpacing="0.0" id="IM1-5i-LkM">
                                                     <size key="itemSize" width="100" height="100"/>
@@ -134,24 +150,8 @@
                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="BlY-bF-iPw"/>
                                                 </connections>
                                             </collectionView>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="COV-GY-FSf">
-                                                <rect key="frame" x="213.5" y="165" width="106.5" height="130"/>
-                                                <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="toydrive.png" translatesAutoresizingMaskIntoConstraints="NO" id="RGM-9P-1Tb">
-                                                        <rect key="frame" x="5" y="5" width="96.5" height="120"/>
-                                                    </imageView>
-                                                </subviews>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="130" id="6b9-TD-ZXO"/>
-                                                    <constraint firstAttribute="bottom" secondItem="RGM-9P-1Tb" secondAttribute="bottom" constant="5" id="Be0-xd-eqB"/>
-                                                    <constraint firstItem="RGM-9P-1Tb" firstAttribute="leading" secondItem="COV-GY-FSf" secondAttribute="leading" constant="5" id="Hw9-FY-PmV"/>
-                                                    <constraint firstItem="RGM-9P-1Tb" firstAttribute="top" secondItem="COV-GY-FSf" secondAttribute="top" constant="5" id="jVG-eu-y4W"/>
-                                                    <constraint firstAttribute="trailing" secondItem="RGM-9P-1Tb" secondAttribute="trailing" constant="5" id="pSP-8r-yxj"/>
-                                                </constraints>
-                                            </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DVD Collection" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="68f-rD-xlV">
-                                                <rect key="frame" x="10" y="303" width="103.5" height="15"/>
+                                                <rect key="frame" x="10" y="305" width="103.5" height="15"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="15" id="n2F-pk-tYE"/>
                                                 </constraints>
@@ -159,24 +159,31 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="f8g-8E-Yqr">
+                                                <rect key="frame" x="141" y="113" width="39" height="37"/>
+                                                <color key="pageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="currentPageIndicatorTintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </pageControl>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="L6A-5I-IAp" firstAttribute="leading" secondItem="NWd-vt-0E8" secondAttribute="leading" constant="10" id="4PP-VL-ZeV"/>
                                             <constraint firstItem="COV-GY-FSf" firstAttribute="leading" secondItem="W7P-hT-Cu8" secondAttribute="trailing" id="CbO-eX-mbS"/>
-                                            <constraint firstItem="L6A-5I-IAp" firstAttribute="top" secondItem="X9h-mZ-eDi" secondAttribute="bottom" constant="2" id="ClH-TI-p12"/>
+                                            <constraint firstItem="L6A-5I-IAp" firstAttribute="top" secondItem="X9h-mZ-eDi" secondAttribute="bottom" id="ClH-TI-p12"/>
                                             <constraint firstAttribute="trailing" secondItem="ldI-Ws-AE8" secondAttribute="trailing" constant="10" id="GIi-X1-Uza"/>
                                             <constraint firstAttribute="trailing" secondItem="YyO-8x-Xlr" secondAttribute="trailing" id="HjJ-jZ-9hd"/>
                                             <constraint firstItem="COV-GY-FSf" firstAttribute="baseline" secondItem="W7P-hT-Cu8" secondAttribute="baseline" id="O5Q-oH-x9s"/>
                                             <constraint firstItem="YyO-8x-Xlr" firstAttribute="height" secondItem="W7P-hT-Cu8" secondAttribute="height" id="O8N-Gd-gPk"/>
                                             <constraint firstAttribute="trailing" secondItem="X9h-mZ-eDi" secondAttribute="trailing" id="P8j-rN-7CV"/>
                                             <constraint firstItem="YyO-8x-Xlr" firstAttribute="leading" secondItem="NWd-vt-0E8" secondAttribute="leading" id="PeJ-14-euF"/>
+                                            <constraint firstItem="f8g-8E-Yqr" firstAttribute="top" secondItem="X9h-mZ-eDi" secondAttribute="bottom" constant="-37" id="SDf-46-Ypj"/>
                                             <constraint firstItem="X9h-mZ-eDi" firstAttribute="leading" secondItem="NWd-vt-0E8" secondAttribute="leading" id="SUO-DJ-QHM"/>
-                                            <constraint firstItem="ldI-Ws-AE8" firstAttribute="top" secondItem="W7P-hT-Cu8" secondAttribute="bottom" constant="5" id="WK5-nJ-h7m"/>
+                                            <constraint firstItem="ldI-Ws-AE8" firstAttribute="top" secondItem="W7P-hT-Cu8" secondAttribute="bottom" constant="4" id="WK5-nJ-h7m"/>
                                             <constraint firstItem="68f-rD-xlV" firstAttribute="leading" secondItem="L6A-5I-IAp" secondAttribute="leading" id="YeV-hT-1hf"/>
-                                            <constraint firstItem="W7P-hT-Cu8" firstAttribute="top" secondItem="X9h-mZ-eDi" secondAttribute="bottom" constant="15" id="ZHO-Sq-d6C"/>
+                                            <constraint firstItem="W7P-hT-Cu8" firstAttribute="top" secondItem="X9h-mZ-eDi" secondAttribute="bottom" constant="18" id="ZHO-Sq-d6C"/>
                                             <constraint firstItem="X9h-mZ-eDi" firstAttribute="top" secondItem="NWd-vt-0E8" secondAttribute="top" id="apJ-bK-Ce3"/>
                                             <constraint firstItem="ldI-Ws-AE8" firstAttribute="leading" secondItem="NWd-vt-0E8" secondAttribute="leading" constant="10" id="b0d-fZ-KaX"/>
+                                            <constraint firstItem="f8g-8E-Yqr" firstAttribute="centerX" secondItem="NWd-vt-0E8" secondAttribute="centerX" id="evc-U2-IGV"/>
                                             <constraint firstItem="W7P-hT-Cu8" firstAttribute="width" secondItem="X9h-mZ-eDi" secondAttribute="width" multiplier="2:3" id="jLe-vg-xyX"/>
                                             <constraint firstItem="YyO-8x-Xlr" firstAttribute="top" secondItem="68f-rD-xlV" secondAttribute="bottom" constant="5" id="lxx-I7-iBm"/>
                                             <constraint firstAttribute="trailing" secondItem="COV-GY-FSf" secondAttribute="trailing" id="uoD-Ho-LUJ"/>
@@ -191,6 +198,9 @@
                                     <constraint firstAttribute="trailing" secondItem="NWd-vt-0E8" secondAttribute="trailing" id="gZl-Nc-Yh8"/>
                                     <constraint firstAttribute="bottom" secondItem="NWd-vt-0E8" secondAttribute="bottom" id="wLD-cH-MJv"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="PL8-y4-kme"/>
+                                </connections>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -207,6 +217,7 @@
                     <navigationItem key="navigationItem" title="Pirate Bay" id="oHo-XQ-I9w"/>
                     <connections>
                         <outlet property="dvdCV" destination="YyO-8x-Xlr" id="WDI-yp-gfv"/>
+                        <outlet property="pageControl" destination="f8g-8E-Yqr" id="R2L-mR-Aud"/>
                         <outlet property="pageView" destination="X9h-mZ-eDi" id="7BR-m4-gL1"/>
                         <outlet property="toyCV" destination="W7P-hT-Cu8" id="0WI-66-mLT"/>
                     </connections>

@@ -12,8 +12,7 @@ class PromoContentVC: UIViewController {
 
     // MARK: - Outlet
     
-    @IBOutlet weak var promoImageView: UIImageView!
-    
+    @IBOutlet weak var promoImageView: UIImageView!    
     
     // MARK: - Properties
     

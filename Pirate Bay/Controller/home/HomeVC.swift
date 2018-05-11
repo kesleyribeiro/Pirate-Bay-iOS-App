@@ -11,14 +11,18 @@ import UIKit
 class HomeVC: UIViewController {
 
     // MARK: - IBOutlet
+    
     @IBOutlet weak var pageView: UIView!
     @IBOutlet weak var toyCV: UICollectionView!
     @IBOutlet weak var dvdCV: UICollectionView!
+    @IBOutlet weak var pageControl: UIPageControl!
     
     // MARK: - Properties
+    
     var pageViewController: UIPageViewController?
     let arrayPageImage = ["piratebattle", "piratemap", "piratesofcaribbean"]
     var currentIndex = 0
+    var pendingIndex: Int?
     var toysCollection = [Product]()
     var dvdCollection = [Product]()
 
@@ -40,7 +44,7 @@ class HomeVC: UIViewController {
         
         let pageVC = self.storyboard?.instantiateViewController(withIdentifier: "promoPageVC") as! UIPageViewController
         
-        pageVC.dataSource = self
+        pageVC.dataSource = self        
         
         let firstController = getViewController(atIndex: 0)
         
@@ -73,6 +77,8 @@ class HomeVC: UIViewController {
         let nextController = getViewController(atIndex: currentIndex)
         
         self.pageViewController?.setViewControllers([nextController], direction: .forward, animated: true, completion: nil)
+        
+        self.pageControl.currentPage = currentIndex
     }
     
     private func loadProducts() {
@@ -139,6 +145,8 @@ extension HomeVC: UIPageViewControllerDataSource {
 
 extension HomeVC: UICollectionViewDataSource {
     
+    // UIPageViewControllerDataSource
+    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -181,4 +189,5 @@ extension HomeVC: UICollectionViewDataSource {
             return UICollectionViewCell()
         }
     }
+    
 }
