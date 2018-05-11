@@ -18,6 +18,7 @@
 		FA1216A320A60523000AB173 /* blackstar.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FA1216A120A60522000AB173 /* blackstar.pdf */; };
 		FA1216A420A60523000AB173 /* yellowstar.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FA1216A220A60523000AB173 /* yellowstar.pdf */; };
 		FA1216A620A60585000AB173 /* UserRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1216A520A60585000AB173 /* UserRating.swift */; };
+		FA1216A820A61E59000AB173 /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1216A720A61E59000AB173 /* MyButton.swift */; };
 		FA887C6F20A24F350071220F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA887C6E20A24F350071220F /* AppDelegate.swift */; };
 		FA887C7420A24F350071220F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA887C7220A24F350071220F /* Main.storyboard */; };
 		FA887C7620A24F360071220F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA887C7520A24F360071220F /* Assets.xcassets */; };
@@ -92,6 +93,7 @@
 		FA1216A120A60522000AB173 /* blackstar.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = blackstar.pdf; sourceTree = "<group>"; };
 		FA1216A220A60523000AB173 /* yellowstar.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = yellowstar.pdf; sourceTree = "<group>"; };
 		FA1216A520A60585000AB173 /* UserRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRating.swift; sourceTree = "<group>"; };
+		FA1216A720A61E59000AB173 /* MyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
 		FA887C6B20A24F350071220F /* Pirate Bay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pirate Bay.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA887C6E20A24F350071220F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA887C7320A24F350071220F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -464,6 +466,7 @@
 			children = (
 				FA887D0720A32F9B0071220F /* Utility.swift */,
 				FA1216A520A60585000AB173 /* UserRating.swift */,
+				FA1216A720A61E59000AB173 /* MyButton.swift */,
 			);
 			path = helper;
 			sourceTree = "<group>";
@@ -605,6 +608,7 @@
 			files = (
 				FA887C8820A26B4C0071220F /* PromoContentVC.swift in Sources */,
 				FA03318F20A3638B009AEB73 /* ProductService.swift in Sources */,
+				FA1216A820A61E59000AB173 /* MyButton.swift in Sources */,
 				FA887D0B20A3306E0071220F /* String+Extension.swift in Sources */,
 				FA887C8A20A26B690071220F /* HomeVC.swift in Sources */,
 				FA887D0820A32F9B0071220F /* Utility.swift in Sources */,
