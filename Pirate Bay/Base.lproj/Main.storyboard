@@ -459,7 +459,6 @@ Gift-wrap available.</string>
                                                         </userDefinedRuntimeAttributes>
                                                     </button>
                                                 </subviews>
-                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstItem="l6d-Cz-XqZ" firstAttribute="leading" secondItem="4dl-kd-s8e" secondAttribute="leading" id="1B6-iJ-3V3"/>
                                                     <constraint firstItem="vcM-4u-PtS" firstAttribute="top" secondItem="Ft6-nE-2OX" secondAttribute="bottom" constant="5" id="1Ve-FI-hwO"/>

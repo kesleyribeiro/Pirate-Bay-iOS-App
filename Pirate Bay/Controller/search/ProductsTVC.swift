@@ -58,6 +58,8 @@ class ProductsTVC: UITableViewController {
                 
                 cell.contentView.layer.borderWidth = 1
                 cell.contentView.layer.borderColor = UIColor().pirateBay_brown().cgColor
+                
+                delegate?.product = selectedProduct
             }
             else {
                 cell.contentView.layer.borderWidth = 0

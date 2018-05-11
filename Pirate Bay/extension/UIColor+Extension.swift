@@ -13,4 +13,8 @@ extension UIColor {
     func pirateBay_brown() -> UIColor {
         return UIColor(red: 206/255.0, green: 125/255.0, blue: 44/255.0, alpha: 1.0)
     }
+    
+    func pirateBay_green() -> UIColor {
+        return UIColor(red: 56/255.0, green: 116/255.0, blue: 8/255.0, alpha: 1.0)
+    }
 }
