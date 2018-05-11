@@ -38,3 +38,7 @@ Screenshots:
 <h2>Home view</h2><br>
 
 ![alt tag](https://github.com/kesleyribeiro/Pirate-Bay-iOS-App/blob/master/screen%20shots/Home-view.png)
+
+<h2>Products view</h2><br>
+
+![alt tag](https://github.com/kesleyribeiro/Pirate-Bay-iOS-App/blob/master/screen%20shots/Products-view.png)
