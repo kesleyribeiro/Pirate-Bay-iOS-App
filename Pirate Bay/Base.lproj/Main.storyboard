@@ -353,15 +353,14 @@
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$999.999" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXB-bA-V21">
-                                            <rect key="frame" x="76" y="49" width="60.5" height="16"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$999.99" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXB-bA-V21">
+                                            <rect key="frame" x="76" y="49" width="61" height="16"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <color key="textColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Shb-rj-54C">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Shb-rj-54C" customClass="UserRating" customModule="Pirate_Bay" customModuleProvider="target">
                                             <rect key="frame" x="232" y="53" width="80" height="12"/>
-                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="12" id="WHc-VY-Xz0"/>
                                                 <constraint firstAttribute="width" constant="80" id="q8r-yJ-COs"/>
@@ -388,6 +387,7 @@
                                     <outlet property="priceLabel" destination="QXB-bA-V21" id="wKR-Ut-zVg"/>
                                     <outlet property="productImageView" destination="pkp-TG-MpV" id="LwL-kT-3rX"/>
                                     <outlet property="productNameLabel" destination="9Mo-7V-Bas" id="Zlh-wh-Dzf"/>
+                                    <outlet property="userRating" destination="Shb-rj-54C" id="wWN-4r-Nqj"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
