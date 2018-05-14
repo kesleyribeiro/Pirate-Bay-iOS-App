@@ -13,6 +13,9 @@ class ProductDetailVC: UIViewController {
     // MARK: - IBOutlet
     
     @IBOutlet weak var detailSummaryView: DetailSummaryView!
+    @IBOutlet weak var productDescriptionImageView: UIImageView!
+    @IBOutlet weak var productDescriptionLabel: UILabel!
+    @IBOutlet weak var tableView: UITableView!
     
     // MARK: - Properties
     
