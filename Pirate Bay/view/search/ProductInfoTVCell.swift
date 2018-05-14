@@ -10,7 +10,7 @@ import UIKit
 
 class ProductInfoTVCell: UITableViewCell {
 
-    // MARK: - @IBOutlets
+    // MARK: - IBOutlets
     
     @IBOutlet weak var infoTitleLabel: UILabel!
     @IBOutlet weak var productSpecLabel: UILabel!

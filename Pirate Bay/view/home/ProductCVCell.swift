@@ -11,5 +11,6 @@ import UIKit
 class ProductCVCell: UICollectionViewCell {
  
     // MARK: - Outlet
+
     @IBOutlet weak var productImageView: UIImageView!
 }

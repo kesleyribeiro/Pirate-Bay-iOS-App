@@ -10,7 +10,7 @@ import UIKit
 
 class DetailSummaryView: UIView {
 
-    // MARK: - @IBBOutlets
+    // MARK: - IBOutlets
     
     @IBOutlet weak var manufacturerLabel: UILabel!
     @IBOutlet weak var productNameLabel: UILabel!

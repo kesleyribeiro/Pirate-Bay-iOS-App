@@ -10,12 +10,14 @@ import UIKit
 
 class ProductDetailVC: UIViewController {
 
-    // MARK: - IBOutlet
+    // MARK: - IBOutlets
     
     @IBOutlet weak var detailSummaryView: DetailSummaryView!
     @IBOutlet weak var productDescriptionImageView: UIImageView!
     @IBOutlet weak var productDescriptionLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var shoppingCartButton: UIButton!
+    @IBOutlet weak var cartItemCountLabel: UILabel!
     
     // MARK: - Properties
     
@@ -29,6 +31,7 @@ class ProductDetailVC: UIViewController {
     
     var specifications = [ProductInfo]()
     var quantity = 1
+    var shoppingCart = ShoppingCart.sharedInstance
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,6 +52,7 @@ class ProductDetailVC: UIViewController {
             var description = ""
             
             for currentInfo in productInfo {
+                
                 if let info = currentInfo.info, info.characters.count > 0, currentInfo.type == "description" {
                     description = description + info + "\n\n"
                 }
@@ -77,7 +81,32 @@ class ProductDetailVC: UIViewController {
         }
     }
     
+    // MARK: - IBAction
+    
+    @IBAction func didTapAddToCart(_ sender: MyButton) {
 
+        if let product = product {
+            shoppingCart.add(product: product, qty: self.quantity)
+            
+            // Reset the quantity
+            self.quantity = 1
+            self.detailSummaryView.quantityButton.setTitle("Quantity: 1", for: .normal)
+            
+            UIView.animate(withDuration: 0.5, animations: { [weak self] in
+                self?.shoppingCartButton.layer.transform = CATransform3DMakeRotation(CGFloat(Double.pi), 0.0, 1.0, 0.0)
+            })
+            
+            UIView.animate(withDuration: 0.5, animations: { [weak self] in
+                self?.shoppingCartButton.layer.transform = CATransform3DMakeRotation(CGFloat(Double.pi) * 2, 0.0, 1.0, 0.0)
+                }, completion: { (sucess: Bool) in
+                    DispatchQueue.main.async { [unowned self] in
+                        self.cartItemCountLabel.text = "\(self.shoppingCart.totalItem())"
+                    }
+                }
+            )
+        }
+    }
+    
 }
 
 
