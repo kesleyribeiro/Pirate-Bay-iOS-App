@@ -25,7 +25,10 @@ class HomeVC: UIViewController {
     var pendingIndex: Int?
     var toysCollection = [Product]()
     var dvdCollection = [Product]()
-
+    var selectedProduct: Product?
+    var productsInSelectedCategory: [Product]?
+    var productTVC: ProductsTVC?
+    
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
@@ -145,8 +148,6 @@ extension HomeVC: UIPageViewControllerDataSource {
 
 extension HomeVC: UICollectionViewDataSource {
     
-    // UIPageViewControllerDataSource
-    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -190,4 +191,30 @@ extension HomeVC: UICollectionViewDataSource {
         }
     }
     
+}
+
+
+// MARK: - UICollectionViewDelegate
+
+extension HomeVC: UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        switch collectionView {
+        case self.toyCV:
+            selectedProduct = toysCollection[indexPath.row]
+            productsInSelectedCategory = toysCollection
+            
+        case self.dvdCV:
+            selectedProduct = dvdCollection[indexPath.row]
+            productsInSelectedCategory = dvdCollection
+            
+        default:
+            print("Nothing ins picked")
+        }
+        
+        self.productTVC?.products = productsInSelectedCategory
+        self.productTVC?.selectedProduct = selectedProduct
+        
+        self.parent?.tabBarController?.selectedIndex = 1
+    }
 }
