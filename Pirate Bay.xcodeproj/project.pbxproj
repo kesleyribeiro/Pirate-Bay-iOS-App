@@ -23,6 +23,7 @@
 		FA1216AC20A624B1000AB173 /* DetailSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1216AB20A624B1000AB173 /* DetailSummaryView.swift */; };
 		FA1216AE20A64D94000AB173 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1216AD20A64D94000AB173 /* UIImage+Extension.swift */; };
 		FA27968320A9B777005CF59B /* ProductInfoTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA27968220A9B777005CF59B /* ProductInfoTVCell.swift */; };
+		FA27968520A9CB71005CF59B /* QuantityTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA27968420A9CB71005CF59B /* QuantityTVC.swift */; };
 		FA887C6F20A24F350071220F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA887C6E20A24F350071220F /* AppDelegate.swift */; };
 		FA887C7420A24F350071220F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA887C7220A24F350071220F /* Main.storyboard */; };
 		FA887C7620A24F360071220F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA887C7520A24F360071220F /* Assets.xcassets */; };
@@ -102,6 +103,7 @@
 		FA1216AB20A624B1000AB173 /* DetailSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSummaryView.swift; sourceTree = "<group>"; };
 		FA1216AD20A64D94000AB173 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		FA27968220A9B777005CF59B /* ProductInfoTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInfoTVCell.swift; sourceTree = "<group>"; };
+		FA27968420A9CB71005CF59B /* QuantityTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantityTVC.swift; sourceTree = "<group>"; };
 		FA887C6B20A24F350071220F /* Pirate Bay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pirate Bay.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA887C6E20A24F350071220F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA887C7320A24F350071220F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 			children = (
 				FA03319B20A38508009AEB73 /* ProductsTVC.swift */,
 				FA1216A920A62472000AB173 /* ProductDetailVC.swift */,
+				FA27968420A9CB71005CF59B /* QuantityTVC.swift */,
 			);
 			path = search;
 			sourceTree = "<group>";
@@ -626,6 +629,7 @@
 				FA887D0B20A3306E0071220F /* String+Extension.swift in Sources */,
 				FA887C8A20A26B690071220F /* HomeVC.swift in Sources */,
 				FA887D0820A32F9B0071220F /* Utility.swift in Sources */,
+				FA27968520A9CB71005CF59B /* QuantityTVC.swift in Sources */,
 				FA03319320A36769009AEB73 /* ProductCVCell.swift in Sources */,
 				FA887C9920A318FC0071220F /* PirateBay.xcdatamodeld in Sources */,
 				FA03319C20A38508009AEB73 /* ProductsTVC.swift in Sources */,
