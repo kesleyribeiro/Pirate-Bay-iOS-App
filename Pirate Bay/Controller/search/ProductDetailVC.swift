@@ -28,6 +28,7 @@ class ProductDetailVC: UIViewController {
     }
     
     var specifications = [ProductInfo]()
+    var quantity = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,15 +60,23 @@ class ProductDetailVC: UIViewController {
         }
     }
     
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if let identifier = segue.identifier {
+            switch identifier {
+            case "segueQuantity":
+                let quantityTVC = segue.destination as! QuantityTVC
+                quantityTVC.delegate = self
+                
+            default:
+                break
+            }
+        }
     }
-    */
+    
 
 }
 
@@ -90,5 +99,16 @@ extension ProductDetailVC: UITableViewDataSource {
         cell.productInfo = specifications[indexPath.row]
         
         return cell
+    }
+}
+
+
+// MARK: - QuantityPopoverDelegate
+
+extension ProductDetailVC: QuantityPopoverDelegate {
+    
+    func updateProductToBuy(withQuantity quantity: Int) {
+        self.quantity = quantity
+        detailSummaryView.quantityButton.setTitle("Quantity: \(self.quantity)", for: .normal)
     }
 }
