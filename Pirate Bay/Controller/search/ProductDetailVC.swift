@@ -16,8 +16,9 @@ class ProductDetailVC: UIViewController {
     @IBOutlet weak var productDescriptionImageView: UIImageView!
     @IBOutlet weak var productDescriptionLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var shoppingCartButton: UIButton!
-    @IBOutlet weak var cartItemCountLabel: UILabel!
+    //@IBOutlet weak var shoppingCartButton: UIButton!
+    //@IBOutlet weak var cartItemCountLabel: UILabel!
+    @IBOutlet weak var shoppingCartButton: UIBarButtonItem!
     
     // MARK: - Properties
     
@@ -33,13 +34,40 @@ class ProductDetailVC: UIViewController {
     var quantity = 1
     var shoppingCart = ShoppingCart.sharedInstance
     
+    // Shopping Cart Button with custom view
+    let cartButton = UIButton(frame: CGRect(x: 10, y: 10, width: 35, height: 30))
+    let cartLabel = UILabel(frame: CGRect(x: 22, y: 2, width: 16, height: 16))
+    let cartView = UIView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        setCartView()
     }
 
     // MARK: Private function
+    
+    private func setCartView() {
+        
+        cartButton.setBackgroundImage(UIImage(named: "shopping-cart"), for: .normal)
+        cartButton.addTarget(self, action: #selector(ProductDetailVC.viewCart(sender:)), for: .touchUpInside)
+        cartLabel.text = "0"
+        cartLabel.textColor = UIColor(red: 0.808, green: 0.490, blue: 0.173, alpha: 1.0)
+        cartLabel.textAlignment = .center
+        cartLabel.font = UIFont(name: "System", size: 14.0)
+        cartLabel.numberOfLines = 1
+        cartLabel.adjustsFontSizeToFitWidth = true
+
+        cartView.addSubview(cartButton)
+        cartView.addSubview(cartLabel)
+        
+        shoppingCartButton.customView = cartView
+    }
+    
+    @objc func viewCart(sender: UIButton) {
+        
+        performSegue(withIdentifier: "segueToViewCart", sender: self)
+    }
     
     private func showDetail(for currentProduct: Product) {
         
@@ -93,14 +121,14 @@ class ProductDetailVC: UIViewController {
             self.detailSummaryView.quantityButton.setTitle("Quantity: 1", for: .normal)
             
             UIView.animate(withDuration: 0.5, animations: { [weak self] in
-                self?.shoppingCartButton.layer.transform = CATransform3DMakeRotation(CGFloat(Double.pi), 0.0, 1.0, 0.0)
+                self?.cartButton.layer.transform = CATransform3DMakeRotation(CGFloat(Double.pi), 0.0, 1.0, 0.0)
             })
             
             UIView.animate(withDuration: 0.5, animations: { [weak self] in
-                self?.shoppingCartButton.layer.transform = CATransform3DMakeRotation(CGFloat(Double.pi) * 2, 0.0, 1.0, 0.0)
+                self?.cartButton.layer.transform = CATransform3DMakeRotation(CGFloat(Double.pi) * 2, 0.0, 1.0, 0.0)
                 }, completion: { (sucess: Bool) in
                     DispatchQueue.main.async { [unowned self] in
-                        self.cartItemCountLabel.text = "\(self.shoppingCart.totalItem())"
+                        self.cartLabel.text = "\(self.shoppingCart.totalItem())"
                     }
                 }
             )

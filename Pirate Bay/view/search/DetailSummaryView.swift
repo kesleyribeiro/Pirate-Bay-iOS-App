@@ -37,7 +37,7 @@ class DetailSummaryView: UIView {
         super.init(coder: aDecoder)
     }
     
-    internal func updateView(with product: Product) {
+    func updateView(with product: Product) {
         
         // Make sure no previous view still exists in the current view
         buttonContainerView?.removeFromSuperview()
