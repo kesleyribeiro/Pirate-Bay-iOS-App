@@ -10,6 +10,18 @@ import UIKit
 
 class AddressVC: UIViewController {
 
+    // MARK: - IBOutlets
+    
+    @IBOutlet weak var addressPickerView: UIPickerView!
+    @IBOutlet weak var fullnameTxtField: UITextField!
+    @IBOutlet weak var address1TxtField: UITextField!
+    @IBOutlet weak var address2TxtField: UITextField!
+    @IBOutlet weak var cityTxtField: UITextField!
+    @IBOutlet weak var zioTxtField: UITextField!
+    @IBOutlet weak var phoneNumberTxtField: UITextField!
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var noAddressLabel: UILabel!
+    
     // MARK: - Properties
     
     var customer: Customer?
