@@ -1,9 +1,44 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14133" systemVersion="17E202" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Address" representedClassName="Address" syncable="YES" codeGenerationType="class">
+        <attribute name="address1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="address2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zip" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="creditCard" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CreditCard" inverseName="address" inverseEntity="CreditCard" syncable="YES"/>
+        <relationship name="customer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Customer" inverseName="address" inverseEntity="Customer" syncable="YES"/>
+    </entity>
+    <entity name="CreditCard" representedClassName="CreditCard" syncable="YES" codeGenerationType="class">
+        <attribute name="cardNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cvv" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="expMonth" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="expYear" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="nameOnCard" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="address" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Address" inverseName="creditCard" inverseEntity="Address" syncable="YES"/>
+        <relationship name="customer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Customer" inverseName="creditCard" inverseEntity="Customer" syncable="YES"/>
+        <relationship name="orderHistory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="OrderHistory" inverseName="creditCard" inverseEntity="OrderHistory" syncable="YES"/>
+    </entity>
+    <entity name="Customer" representedClassName="Customer" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="address" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Address" inverseName="customer" inverseEntity="Address" syncable="YES"/>
+        <relationship name="creditCard" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CreditCard" inverseName="customer" inverseEntity="CreditCard" syncable="YES"/>
+        <relationship name="orderHistory" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="OrderHistory" inverseName="customer" inverseEntity="OrderHistory" syncable="YES"/>
+    </entity>
     <entity name="Manufacturer" representedClassName="Manufacturer" syncable="YES" codeGenerationType="class">
         <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="product" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Product" inverseName="manufacturer" inverseEntity="Product" syncable="YES"/>
+    </entity>
+    <entity name="OrderHistory" representedClassName="OrderHistory" syncable="YES" codeGenerationType="class">
+        <attribute name="orderNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="creditCard" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CreditCard" inverseName="orderHistory" inverseEntity="CreditCard" syncable="YES"/>
+        <relationship name="customer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Customer" inverseName="orderHistory" inverseEntity="Customer" syncable="YES"/>
+        <relationship name="product" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Product" inverseName="orderHistory" inverseEntity="Product" syncable="YES"/>
     </entity>
     <entity name="Product" representedClassName="Product" syncable="YES" codeGenerationType="class">
         <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
@@ -16,6 +51,7 @@
         <attribute name="summary" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="manufacturer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Manufacturer" inverseName="product" inverseEntity="Manufacturer" syncable="YES"/>
+        <relationship name="orderHistory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="OrderHistory" inverseName="product" inverseEntity="OrderHistory" syncable="YES"/>
         <relationship name="productImages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ProductImage" inverseName="product" inverseEntity="ProductImage" syncable="YES"/>
         <relationship name="productInfo" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ProductInfo" inverseName="product" inverseEntity="ProductInfo" syncable="YES"/>
     </entity>
@@ -31,9 +67,13 @@
         <relationship name="product" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Product" inverseName="productInfo" inverseEntity="Product" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Product" positionX="-101" positionY="-180" width="128" height="223"/>
+        <element name="Manufacturer" positionX="106" positionY="-18" width="128" height="88"/>
+        <element name="Product" positionX="-101" positionY="-180" width="128" height="238"/>
         <element name="ProductImage" positionX="-326" positionY="-27" width="128" height="90"/>
         <element name="ProductInfo" positionX="-135" positionY="144" width="128" height="105"/>
-        <element name="Manufacturer" positionX="106" positionY="-18" width="128" height="88"/>
+        <element name="Customer" positionX="-108" positionY="9" width="128" height="150"/>
+        <element name="Address" positionX="-99" positionY="18" width="128" height="150"/>
+        <element name="CreditCard" positionX="-90" positionY="27" width="128" height="180"/>
+        <element name="OrderHistory" positionX="-81" positionY="36" width="128" height="105"/>
     </elements>
 </model>
