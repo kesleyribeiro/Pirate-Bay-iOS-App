@@ -29,6 +29,7 @@ class AddressVC: UIViewController {
     var customer: Customer?
     var addresses = [Address]()
     var selectedAddress: Address?
+    var activeTextField: UITextField?
     
     
     // MARK: - lifecycle
@@ -52,6 +53,36 @@ class AddressVC: UIViewController {
                 noAddressLabel.isHidden = false
             }
         }
+    }
+    
+    
+    // MARK: - Privete functions
+    
+    private func registerForKeyboardNotification() {
+        
+        let notificationCenter = NotificationCenter.default
+
+        notificationCenter.addObserver(self, selector: #selector(AddressVC.keyboardIsOn(sender:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        
+        notificationCenter.addObserver(self, selector: #selector(AddressVC.keyboardIsOff(sender:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+    }
+    
+    @objc private func keyboardIsOn(sender: Notification) {
+        
+        let info: NSDictionary = sender.userInfo! as NSDictionary
+        let value: NSValue = info.value(forKey: UIKeyboardFrameBeginUserInfoKey) as! NSValue
+        let keyboardSize = value.cgRectValue.size
+        
+        let contentInsets: UIEdgeInsets = UIEdgeInsetsMake(0.0, 0.0, keyboardSize.height - 90, 0.0)
+        
+        scrollView.contentInset = contentInsets
+        scrollView.scrollIndicatorInsets = contentInsets
+    }
+    
+    @objc private func keyboardIsOff(sender: Notification) {
+        
+        scrollView.setContentOffset(CGPoint(x: 0, y: -50), animated: true)
+        scrollView.isScrollEnabled = false
     }
     
     
@@ -89,5 +120,23 @@ extension AddressVC: UIPickerViewDataSource, UIPickerViewDelegate {
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         selectedAddress = addresses[row]
+    }
+}
+
+
+// MARK: - UITextFieldDelegate
+
+extension AddressVC: UITextFieldDelegate {
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        activeTextField = textField
+        scrollView.isScrollEnabled = true
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        activeTextField = nil
+        
+        return true
     }
 }

@@ -8,22 +8,22 @@ Those are things I will be dealing with in this Pirate Bay app. The app will tar
 Argghh ... Aye aye Captain! .. Let's sail!!
 
 * ScrollView
-* Keyboard Notification
-* Multiple types of view controllers in a single scene
-* Multiple collection views in a single scene
+* TextField and Keyboard Notification
+* Multiple types of View Controllers in a single scene
+* Multiple Collection Views in a single scene
 * Tab Bar Controller
 * IBDesignable and IBInspectable
 * Automatic page sliding
 * Custom XIB
 * UITableViewController with static and dynamic view
-* Multi sections tableview controller
+* Multi sections TableView Controller
 * MVC with Service Layer (MVVM)
 * Data Model with CoreData
 * JSON file
 * Dynamic buttons
 * Stackview
 * Shopping cart singleton
-* Protocol and delegate
+* Protocol and Delegate
 * Popover Presentation Controller
 * Alert Controller
 * Form Sheet
@@ -31,6 +31,7 @@ Argghh ... Aye aye Captain! .. Let's sail!!
 * Picker View
 * Unwind Segue
 * Storyboard Reference
+* Extension
 
 
 <h2>Screenshots:</h2>
