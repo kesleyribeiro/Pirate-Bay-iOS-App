@@ -48,5 +48,12 @@ struct CustomerService {
             fatalError("Error create a new customer: \(error.localizedDescription)")
         }
     }
+    
+    static func addressList(forCustomer customer: Customer) -> [Address] {
+        
+        let addresses = customer.address?.mutableCopy() as! NSMutableSet
+        return addresses.allObjects as! [Address]
+    }
+    
 }
 
