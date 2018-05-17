@@ -16,8 +16,6 @@ class ProductDetailVC: UIViewController {
     @IBOutlet weak var productDescriptionImageView: UIImageView!
     @IBOutlet weak var productDescriptionLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
-    //@IBOutlet weak var shoppingCartButton: UIButton!
-    //@IBOutlet weak var cartItemCountLabel: UILabel!
     @IBOutlet weak var shoppingCartButton: UIBarButtonItem!
     
     // MARK: - Properties
@@ -66,7 +64,7 @@ class ProductDetailVC: UIViewController {
     
     @objc func viewCart(sender: UIButton) {
         
-        performSegue(withIdentifier: "segueToViewCart", sender: self)
+        performSegue(withIdentifier: "segueToCart", sender: self)
     }
     
     private func showDetail(for currentProduct: Product) {
@@ -102,6 +100,12 @@ class ProductDetailVC: UIViewController {
             case "segueQuantity":
                 let quantityTVC = segue.destination as! QuantityTVC
                 quantityTVC.delegate = self
+                
+            case "segueToCart":
+                let navController = segue.destination as! UINavigationController
+                let cartTVC = navController.topViewController as! CartTVC
+                cartTVC.cartDelegate = self
+                
                 
             default:
                 break
@@ -167,5 +171,15 @@ extension ProductDetailVC: QuantityPopoverDelegate {
     func updateProductToBuy(withQuantity quantity: Int) {
         self.quantity = quantity
         detailSummaryView.quantityButton.setTitle("Quantity: \(self.quantity)", for: .normal)
+    }
+}
+
+
+// MARK: - ShoppingCartDelegate
+
+extension ProductDetailVC: ShoppingCartDelegate {
+    
+    func updateTotalCartItem() {
+        cartLabel.text = "\(shoppingCart.totalItem())"        
     }
 }

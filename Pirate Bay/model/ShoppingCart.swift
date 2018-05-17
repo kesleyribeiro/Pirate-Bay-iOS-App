@@ -8,6 +8,11 @@
 
 import Foundation
 
+@objc protocol ShoppingCartDelegate: class {
+    func updateTotalCartItem()
+    @objc optional func confirmRemoval(forProduct product: Product, itemIndexPath: IndexPath)
+}
+
 class ShoppingCart {
     
     var items = [(product: Product, qty: Int)]()

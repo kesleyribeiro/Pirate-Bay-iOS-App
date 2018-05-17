@@ -29,6 +29,7 @@ class ItemInCartTVCell: UITableViewCell {
     }
     
     var itemIndexPath: IndexPath?
+    weak var delegate: ShoppingCartDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -54,8 +55,10 @@ class ItemInCartTVCell: UITableViewCell {
     
     // MARK: - IBActions
     
-    @IBAction func didTapToRemove(_ sender: Any) {
-        
+    @IBAction func didTapToRemove(_ sender: UIButton) {
+        if let product = item?.product, let itemIndexPath = itemIndexPath {
+            delegate?.confirmRemoval!(forProduct: product, itemIndexPath: itemIndexPath)
+        }
     }
 }
 
@@ -67,6 +70,7 @@ extension ItemInCartTVCell: UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
         if let qty = qtyTxtField.text, let currentItem = self.item {
             shoppingCart.update(product: currentItem.product, qty: Int(qty)!)
+            delegate?.updateTotalCartItem()
         }
     }
     
