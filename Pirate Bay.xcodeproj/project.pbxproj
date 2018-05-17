@@ -29,6 +29,7 @@
 		FA27968C20AC9EB6005CF59B /* CartTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA27968B20AC9EB6005CF59B /* CartTVC.swift */; };
 		FA27969020ACA2B3005CF59B /* ItemInCartTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA27968E20ACA2B3005CF59B /* ItemInCartTVCell.swift */; };
 		FA27969120ACA2B3005CF59B /* ItemInCartTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA27968F20ACA2B3005CF59B /* ItemInCartTVCell.xib */; };
+		FA27969420ADFC74005CF59B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA27969320ADFC74005CF59B /* LoginVC.swift */; };
 		FA887C6F20A24F350071220F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA887C6E20A24F350071220F /* AppDelegate.swift */; };
 		FA887C7420A24F350071220F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA887C7220A24F350071220F /* Main.storyboard */; };
 		FA887C7620A24F360071220F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA887C7520A24F360071220F /* Assets.xcassets */; };
@@ -114,6 +115,7 @@
 		FA27968B20AC9EB6005CF59B /* CartTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTVC.swift; sourceTree = "<group>"; };
 		FA27968E20ACA2B3005CF59B /* ItemInCartTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemInCartTVCell.swift; sourceTree = "<group>"; };
 		FA27968F20ACA2B3005CF59B /* ItemInCartTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemInCartTVCell.xib; sourceTree = "<group>"; };
+		FA27969320ADFC74005CF59B /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		FA887C6B20A24F350071220F /* Pirate Bay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pirate Bay.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA887C6E20A24F350071220F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA887C7320A24F350071220F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -262,6 +264,14 @@
 			path = cartCheckout;
 			sourceTree = "<group>";
 		};
+		FA27969220ADFC5D005CF59B /* login */ = {
+			isa = PBXGroup;
+			children = (
+				FA27969320ADFC74005CF59B /* LoginVC.swift */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
 		FA887C6220A24F350071220F = {
 			isa = PBXGroup;
 			children = (
@@ -300,6 +310,7 @@
 		FA887C8620A26B2A0071220F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FA27969220ADFC5D005CF59B /* login */,
 				FA27968A20AC9E94005CF59B /* cartCheckout */,
 				FA03319920A384D8009AEB73 /* search */,
 				FA03319420A367C6009AEB73 /* home */,
@@ -656,6 +667,7 @@
 			files = (
 				FA887C8820A26B4C0071220F /* PromoContentVC.swift in Sources */,
 				FA03318F20A3638B009AEB73 /* ProductService.swift in Sources */,
+				FA27969420ADFC74005CF59B /* LoginVC.swift in Sources */,
 				FA1216AC20A624B1000AB173 /* DetailSummaryView.swift in Sources */,
 				FA1216AE20A64D94000AB173 /* UIImage+Extension.swift in Sources */,
 				FA1216A820A61E59000AB173 /* MyButton.swift in Sources */,
