@@ -33,6 +33,12 @@
 		FA27969620AE01E0005CF59B /* CustomerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA27969520AE01E0005CF59B /* CustomerService.swift */; };
 		FA27969920AE068D005CF59B /* AddressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA27969820AE068D005CF59B /* AddressVC.swift */; };
 		FA27969B20AE0DEE005CF59B /* CustomerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA27969A20AE0DEE005CF59B /* CustomerVC.swift */; };
+		FA2796A120AE2722005CF59B /* visa.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FA27969C20AE2721005CF59B /* visa.pdf */; };
+		FA2796A220AE2722005CF59B /* discover.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FA27969D20AE2721005CF59B /* discover.pdf */; };
+		FA2796A320AE2722005CF59B /* creditcard.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FA27969E20AE2722005CF59B /* creditcard.pdf */; };
+		FA2796A420AE2722005CF59B /* amex.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FA27969F20AE2722005CF59B /* amex.pdf */; };
+		FA2796A520AE2722005CF59B /* mastercard.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FA2796A020AE2722005CF59B /* mastercard.pdf */; };
+		FA2796A720AE30A0005CF59B /* PaymentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2796A620AE30A0005CF59B /* PaymentVC.swift */; };
 		FA887C6F20A24F350071220F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA887C6E20A24F350071220F /* AppDelegate.swift */; };
 		FA887C7420A24F350071220F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA887C7220A24F350071220F /* Main.storyboard */; };
 		FA887C7620A24F360071220F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA887C7520A24F360071220F /* Assets.xcassets */; };
@@ -122,6 +128,12 @@
 		FA27969520AE01E0005CF59B /* CustomerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerService.swift; sourceTree = "<group>"; };
 		FA27969820AE068D005CF59B /* AddressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressVC.swift; sourceTree = "<group>"; };
 		FA27969A20AE0DEE005CF59B /* CustomerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerVC.swift; sourceTree = "<group>"; };
+		FA27969C20AE2721005CF59B /* visa.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = visa.pdf; sourceTree = "<group>"; };
+		FA27969D20AE2721005CF59B /* discover.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = discover.pdf; sourceTree = "<group>"; };
+		FA27969E20AE2722005CF59B /* creditcard.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = creditcard.pdf; sourceTree = "<group>"; };
+		FA27969F20AE2722005CF59B /* amex.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = amex.pdf; sourceTree = "<group>"; };
+		FA2796A020AE2722005CF59B /* mastercard.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = mastercard.pdf; sourceTree = "<group>"; };
+		FA2796A620AE30A0005CF59B /* PaymentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentVC.swift; sourceTree = "<group>"; };
 		FA887C6B20A24F350071220F /* Pirate Bay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pirate Bay.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA887C6E20A24F350071220F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA887C7320A24F350071220F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -284,6 +296,7 @@
 			children = (
 				FA27969820AE068D005CF59B /* AddressVC.swift */,
 				FA27969A20AE0DEE005CF59B /* CustomerVC.swift */,
+				FA2796A620AE30A0005CF59B /* PaymentVC.swift */,
 			);
 			path = customer;
 			sourceTree = "<group>";
@@ -338,6 +351,11 @@
 		FA887C8B20A2706E0071220F /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				FA27969F20AE2722005CF59B /* amex.pdf */,
+				FA27969E20AE2722005CF59B /* creditcard.pdf */,
+				FA27969D20AE2721005CF59B /* discover.pdf */,
+				FA2796A020AE2722005CF59B /* mastercard.pdf */,
+				FA27969C20AE2721005CF59B /* visa.pdf */,
 				FA27968820AA072F005CF59B /* shopping-cart.pdf */,
 				FA1216A120A60522000AB173 /* blackstar.pdf */,
 				FA1216A220A60523000AB173 /* yellowstar.pdf */,
@@ -630,6 +648,7 @@
 				FA887CEB20A32F6B0071220F /* sharkbiteship4.jpg in Resources */,
 				FA27969120ACA2B3005CF59B /* ItemInCartTVCell.xib in Resources */,
 				FA887C8F20A270890071220F /* piratebattle.pdf in Resources */,
+				FA2796A220AE2722005CF59B /* discover.pdf in Resources */,
 				FA03319820A36E94009AEB73 /* home.pdf in Resources */,
 				FA887C9320A3178E0071220F /* products.json in Resources */,
 				FA27968920AA072F005CF59B /* shopping-cart.pdf in Resources */,
@@ -640,6 +659,7 @@
 				FA887CF020A32F6B0071220F /* jakeneverland1.jpg in Resources */,
 				FA887CFA20A32F6B0071220F /* popupPirate2.jpg in Resources */,
 				FA887CD920A32F6B0071220F /* piratefairy2.jpg in Resources */,
+				FA2796A520AE2722005CF59B /* mastercard.pdf in Resources */,
 				FA887CF520A32F6B0071220F /* popupPirate6.jpg in Resources */,
 				FA887CE520A32F6B0071220F /* piratetides1.jpg in Resources */,
 				FA887CEA20A32F6B0071220F /* piratetides4.jpg in Resources */,
@@ -656,7 +676,9 @@
 				FA887C7620A24F360071220F /* Assets.xcassets in Resources */,
 				FA887C7420A24F350071220F /* Main.storyboard in Resources */,
 				FA887CE720A32F6B0071220F /* piratetides2.jpg in Resources */,
+				FA2796A420AE2722005CF59B /* amex.pdf in Resources */,
 				FA887D0020A32F6B0071220F /* littletikes5.jpg in Resources */,
+				FA2796A320AE2722005CF59B /* creditcard.pdf in Resources */,
 				FA887CF920A32F6B0071220F /* popupPirate3.jpg in Resources */,
 				FA887CED20A32F6B0071220F /* sharkbiteship2.jpg in Resources */,
 				FA887D0320A32F6B0071220F /* buccaneerboat2.jpg in Resources */,
@@ -672,6 +694,7 @@
 				FA887CE120A32F6B0071220F /* piratescurse1.jpg in Resources */,
 				FA887CDB20A32F6B0071220F /* pirates4.jpg in Resources */,
 				FA887CEC20A32F6B0071220F /* sharkbiteship5.jpg in Resources */,
+				FA2796A120AE2722005CF59B /* visa.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -687,6 +710,7 @@
 				FA27969420ADFC74005CF59B /* LoginVC.swift in Sources */,
 				FA1216AC20A624B1000AB173 /* DetailSummaryView.swift in Sources */,
 				FA1216AE20A64D94000AB173 /* UIImage+Extension.swift in Sources */,
+				FA2796A720AE30A0005CF59B /* PaymentVC.swift in Sources */,
 				FA1216A820A61E59000AB173 /* MyButton.swift in Sources */,
 				FA887D0B20A3306E0071220F /* String+Extension.swift in Sources */,
 				FA27969920AE068D005CF59B /* AddressVC.swift in Sources */,
