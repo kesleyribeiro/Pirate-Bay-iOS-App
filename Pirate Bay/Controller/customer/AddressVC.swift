@@ -30,6 +30,7 @@ class AddressVC: UIViewController {
     var addresses = [Address]()
     var selectedAddress: Address?
     var activeTextField: UITextField?
+    var shoppingCart = ShoppingCart.sharedInstance
     
     
     // MARK: - lifecycle
@@ -86,16 +87,43 @@ class AddressVC: UIViewController {
     }
     
     
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        
+        if let identifier = segue.identifier {
+            switch identifier {
+            case "segueToPayment":
+                if let customer = customer {
+                    shoppingCart.assignCart(toCustomer: customer, items:shoppingCart.items)
+                    
+                    var address: Address
+                    
+                    if !(address1TxtField.text?.isEmpty)! {
+                        
+                        address = CustomerService.addAddress(forCustomer: customer, address1: address1TxtField.text!, address2: address2TxtField.text!, city: cityTxtField.text!, state: stateTxtField.text!, zip: zipTxtField.text!, phone: phoneNumberTxtField.text!)
+                        
+                        shoppingCart.assignShipping(address: address)
+                    }
+                    else {
+                        if selectedAddress == nil {
+                            selectedAddress = addresses[self.addressPickerView.selectedRow(inComponent: 0)]
+                        }
+                        
+                        shoppingCart.assignShipping(address: selectedAddress!)
+                    }
+                    
+                    let paymentController = segue.destination as! PaymentVC
+                    paymentController.customer = customer
+                }
+                
+            default:
+                break
+            }
+        }
     }
-    */
-
+ 
 }
 
 

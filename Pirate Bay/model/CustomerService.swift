@@ -55,5 +55,29 @@ struct CustomerService {
         return addresses.allObjects as! [Address]
     }
     
+    static func addAddress(forCustomer customer: Customer, address1: String, address2: String, city: String, state: String, zip: String, phone: String) -> Address {
+        
+        let address = Address(context: managegObjectContext)
+        address.address1 = address1
+        address.address2 = address2
+        address.city = city
+        address.state = state
+        address.zip = zip
+        
+        let addresses = customer.address?.mutableCopy() as! NSMutableSet
+        addresses.add(address)
+        
+        customer.address = addresses.copy() as? NSSet
+        customer.phone = phone
+        
+        do {
+            try managegObjectContext.save()
+            return address
+        }
+        catch let error as NSError {
+            fatalError("Error adding customer address: \(error.localizedDescription)")
+        }
+    }
+    
 }
 

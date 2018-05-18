@@ -10,9 +10,12 @@ import UIKit
 
 class PaymentVC: UIViewController {
 
+    // MARK: - Properties
+    
+    var customer: Customer?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
     }
 
