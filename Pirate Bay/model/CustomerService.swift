@@ -79,5 +79,45 @@ struct CustomerService {
         }
     }
     
+    static func addCreditCard(forCustomer customer: Customer, nameOnCard: String, cardNumber: String, expMonth: Int, expYear: Int) -> CreditCard {
+        
+        let creditCard = CreditCard(context: managegObjectContext)
+        
+        creditCard.nameOnCard = nameOnCard
+        creditCard.cardNumber = cardNumber
+        creditCard.expMonth = Int16(expMonth)
+        creditCard.expYear = Int16(expYear)
+        
+        switch String(describing: cardNumber.characters.first!) {
+        case "3":
+            creditCard.type = CreditCardType.Amex.rawValue
+        
+        case "4":
+            creditCard.type = CreditCardType.Visa.rawValue
+            
+        case "5":
+            creditCard.type = CreditCardType.MasterCard.rawValue
+            
+        case "6":
+            creditCard.type = CreditCardType.Discover.rawValue
+            
+        default:
+            creditCard.type = CreditCardType.Unknown.rawValue
+        }
+        
+        let creditCards = customer.creditCard?.mutableCopy() as! NSMutableSet
+        creditCards.add(creditCard)
+        
+        customer.creditCard = creditCards.copy() as? NSSet
+        
+        do {
+            try managegObjectContext.save()
+            return creditCard
+        }
+        catch let error as NSError {
+            fatalError("Error adding credit card: \(error.localizedDescription)")
+        }
+    }
+    
 }
 
