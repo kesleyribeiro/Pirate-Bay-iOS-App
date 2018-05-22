@@ -70,7 +70,7 @@ class NewCreditCardTVCell: UITableViewCell {
         
         creditCardDelegate?.add(card: creditCard)
         
-        // Reset credi card infos
+        // Reset credit card infos
         nameOnCardTxtField.text = ""
         cardNumberTxtField.text = ""
         expMonthButton.setTitle("01", for: .normal)
