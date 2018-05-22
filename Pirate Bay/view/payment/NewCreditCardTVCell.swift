@@ -16,7 +16,7 @@ enum CreditCardType: String {
     case Unknown = "unknown"
 }
 
-protocol creditCardDelegate: class {
+protocol CreditCardDelegate: class {
     func add(card: CreditCard)
 }
 
@@ -33,7 +33,7 @@ class NewCreditCardTVCell: UITableViewCell {
     // MARK: - Properties
     
     var customer: Customer?
-    weak var creditCardDelegate: creditCardDelegate?
+    weak var creditCardDelegate: CreditCardDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
