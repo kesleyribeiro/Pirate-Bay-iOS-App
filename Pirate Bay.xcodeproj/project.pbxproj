@@ -42,6 +42,9 @@
 		FA2796AB20AF0CA6005CF59B /* ExistingCreditCardTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2796AA20AF0CA6005CF59B /* ExistingCreditCardTVCell.swift */; };
 		FA2796AD20AF0CB4005CF59B /* NewCreditCardTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2796AC20AF0CB4005CF59B /* NewCreditCardTVCell.swift */; };
 		FA38ABC820B47B07009C1386 /* PopoverTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA38ABC720B47B07009C1386 /* PopoverTVC.swift */; };
+		FA38ABCB20B4A3D9009C1386 /* ReviewOrderTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA38ABCA20B4A3D9009C1386 /* ReviewOrderTVC.swift */; };
+		FA38ABCE20B4A415009C1386 /* PaymentTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA38ABCD20B4A415009C1386 /* PaymentTVCell.swift */; };
+		FA38ABD020B4A426009C1386 /* ShippingTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA38ABCF20B4A426009C1386 /* ShippingTVCell.swift */; };
 		FA887C6F20A24F350071220F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA887C6E20A24F350071220F /* AppDelegate.swift */; };
 		FA887C7420A24F350071220F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA887C7220A24F350071220F /* Main.storyboard */; };
 		FA887C7620A24F360071220F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA887C7520A24F360071220F /* Assets.xcassets */; };
@@ -140,6 +143,9 @@
 		FA2796AA20AF0CA6005CF59B /* ExistingCreditCardTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExistingCreditCardTVCell.swift; sourceTree = "<group>"; };
 		FA2796AC20AF0CB4005CF59B /* NewCreditCardTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCreditCardTVCell.swift; sourceTree = "<group>"; };
 		FA38ABC720B47B07009C1386 /* PopoverTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverTVC.swift; sourceTree = "<group>"; };
+		FA38ABCA20B4A3D9009C1386 /* ReviewOrderTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewOrderTVC.swift; sourceTree = "<group>"; };
+		FA38ABCD20B4A415009C1386 /* PaymentTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentTVCell.swift; sourceTree = "<group>"; };
+		FA38ABCF20B4A426009C1386 /* ShippingTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShippingTVCell.swift; sourceTree = "<group>"; };
 		FA887C6B20A24F350071220F /* Pirate Bay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pirate Bay.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA887C6E20A24F350071220F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA887C7320A24F350071220F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -228,6 +234,7 @@
 		FA03319020A36734009AEB73 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				FA38ABCC20B4A3F9009C1386 /* orderSummary */,
 				FA2796A920AF0C7E005CF59B /* payment */,
 				FA27968D20ACA275005CF59B /* cartCheckout */,
 				FA03319A20A384E6009AEB73 /* search */,
@@ -325,6 +332,23 @@
 			path = payment;
 			sourceTree = "<group>";
 		};
+		FA38ABC920B4A3BD009C1386 /* orderSummary */ = {
+			isa = PBXGroup;
+			children = (
+				FA38ABCA20B4A3D9009C1386 /* ReviewOrderTVC.swift */,
+			);
+			path = orderSummary;
+			sourceTree = "<group>";
+		};
+		FA38ABCC20B4A3F9009C1386 /* orderSummary */ = {
+			isa = PBXGroup;
+			children = (
+				FA38ABCD20B4A415009C1386 /* PaymentTVCell.swift */,
+				FA38ABCF20B4A426009C1386 /* ShippingTVCell.swift */,
+			);
+			path = orderSummary;
+			sourceTree = "<group>";
+		};
 		FA887C6220A24F350071220F = {
 			isa = PBXGroup;
 			children = (
@@ -363,6 +387,7 @@
 		FA887C8620A26B2A0071220F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FA38ABC920B4A3BD009C1386 /* orderSummary */,
 				FA2796A820AF0C53005CF59B /* payment */,
 				FA27969720AE0673005CF59B /* customer */,
 				FA27969220ADFC5D005CF59B /* login */,
@@ -737,9 +762,11 @@
 				FA1216AE20A64D94000AB173 /* UIImage+Extension.swift in Sources */,
 				FA2796A720AE30A0005CF59B /* PaymentVC.swift in Sources */,
 				FA1216A820A61E59000AB173 /* MyButton.swift in Sources */,
+				FA38ABD020B4A426009C1386 /* ShippingTVCell.swift in Sources */,
 				FA887D0B20A3306E0071220F /* String+Extension.swift in Sources */,
 				FA27969920AE068D005CF59B /* AddressVC.swift in Sources */,
 				FA887C8A20A26B690071220F /* HomeVC.swift in Sources */,
+				FA38ABCB20B4A3D9009C1386 /* ReviewOrderTVC.swift in Sources */,
 				FA887D0820A32F9B0071220F /* Utility.swift in Sources */,
 				FA27968520A9CB71005CF59B /* QuantityTVC.swift in Sources */,
 				FA03319320A36769009AEB73 /* ProductCVCell.swift in Sources */,
@@ -749,6 +776,7 @@
 				FA0331A020A386CD009AEB73 /* Double+Extension.swift in Sources */,
 				FA27968C20AC9EB6005CF59B /* CartTVC.swift in Sources */,
 				FA27968720AA0046005CF59B /* ShoppingCart.swift in Sources */,
+				FA38ABCE20B4A415009C1386 /* PaymentTVCell.swift in Sources */,
 				FA27969020ACA2B3005CF59B /* ItemInCartTVCell.swift in Sources */,
 				FA887C6F20A24F350071220F /* AppDelegate.swift in Sources */,
 				FA2796AD20AF0CB4005CF59B /* NewCreditCardTVCell.swift in Sources */,
