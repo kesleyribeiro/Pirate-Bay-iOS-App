@@ -149,7 +149,7 @@ extension PaymentVC: UITableViewDataSource, UITableViewDelegate {
             }
             
         default:
-            <#code#>
+            break
         }
     }
     
