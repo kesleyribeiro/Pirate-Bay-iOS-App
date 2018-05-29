@@ -64,7 +64,7 @@ class ReviewOrderTVC: UITableViewController {
             cell.delegate = self
             
             return cell
-                        
+            
         case 2:
             tableView.rowHeight = 60
             

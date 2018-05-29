@@ -79,6 +79,13 @@ class ShoppingCart {
         self.shippingAddress = address
     }
     
+    internal func reset() {
+        self.items.removeAll()
+        self.customer = nil
+        self.creditCard = nil
+        self.shippingAddress = nil
+    }
+    
     private func find(product: Product) -> Int? {
         let index = items.index(where: {$0.product == product})
         

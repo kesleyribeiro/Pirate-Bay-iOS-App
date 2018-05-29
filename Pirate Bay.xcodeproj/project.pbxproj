@@ -22,6 +22,7 @@
 		FA1216AA20A62472000AB173 /* ProductDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1216A920A62472000AB173 /* ProductDetailVC.swift */; };
 		FA1216AC20A624B1000AB173 /* DetailSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1216AB20A624B1000AB173 /* DetailSummaryView.swift */; };
 		FA1216AE20A64D94000AB173 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1216AD20A64D94000AB173 /* UIImage+Extension.swift */; };
+		FA1CE05C20BDBCE40040E8EE /* OrderConfirmationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE05B20BDBCE40040E8EE /* OrderConfirmationVC.swift */; };
 		FA27968320A9B777005CF59B /* ProductInfoTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA27968220A9B777005CF59B /* ProductInfoTVCell.swift */; };
 		FA27968520A9CB71005CF59B /* QuantityTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA27968420A9CB71005CF59B /* QuantityTVC.swift */; };
 		FA27968720AA0046005CF59B /* ShoppingCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA27968620AA0046005CF59B /* ShoppingCart.swift */; };
@@ -123,6 +124,7 @@
 		FA1216A920A62472000AB173 /* ProductDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailVC.swift; sourceTree = "<group>"; };
 		FA1216AB20A624B1000AB173 /* DetailSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSummaryView.swift; sourceTree = "<group>"; };
 		FA1216AD20A64D94000AB173 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		FA1CE05B20BDBCE40040E8EE /* OrderConfirmationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderConfirmationVC.swift; sourceTree = "<group>"; };
 		FA27968220A9B777005CF59B /* ProductInfoTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInfoTVCell.swift; sourceTree = "<group>"; };
 		FA27968420A9CB71005CF59B /* QuantityTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantityTVC.swift; sourceTree = "<group>"; };
 		FA27968620AA0046005CF59B /* ShoppingCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCart.swift; sourceTree = "<group>"; };
@@ -280,6 +282,14 @@
 			path = search;
 			sourceTree = "<group>";
 		};
+		FA1CE05A20BDBCBA0040E8EE /* orderConfirmation */ = {
+			isa = PBXGroup;
+			children = (
+				FA1CE05B20BDBCE40040E8EE /* OrderConfirmationVC.swift */,
+			);
+			path = orderConfirmation;
+			sourceTree = "<group>";
+		};
 		FA27968A20AC9E94005CF59B /* cartCheckout */ = {
 			isa = PBXGroup;
 			children = (
@@ -387,6 +397,7 @@
 		FA887C8620A26B2A0071220F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FA1CE05A20BDBCBA0040E8EE /* orderConfirmation */,
 				FA38ABC920B4A3BD009C1386 /* orderSummary */,
 				FA2796A820AF0C53005CF59B /* payment */,
 				FA27969720AE0673005CF59B /* customer */,
@@ -769,6 +780,7 @@
 				FA38ABCB20B4A3D9009C1386 /* ReviewOrderTVC.swift in Sources */,
 				FA887D0820A32F9B0071220F /* Utility.swift in Sources */,
 				FA27968520A9CB71005CF59B /* QuantityTVC.swift in Sources */,
+				FA1CE05C20BDBCE40040E8EE /* OrderConfirmationVC.swift in Sources */,
 				FA03319320A36769009AEB73 /* ProductCVCell.swift in Sources */,
 				FA887C9920A318FC0071220F /* PirateBay.xcdatamodeld in Sources */,
 				FA27969620AE01E0005CF59B /* CustomerService.swift in Sources */,
