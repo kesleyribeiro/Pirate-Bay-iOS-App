@@ -42,6 +42,12 @@ class ProductDetailVC: UIViewController {
 
         setCartView()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        cartLabel.text = "\(self.shoppingCart.totalItem())"
+    }
 
     // MARK: Private function
     
